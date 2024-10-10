@@ -1,0 +1,90 @@
+@use "../config";
+
+.cta-3 {
+    @media (min-width: config.$breakpoint-lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.cta-3__image-unit {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.cta-3__image-container {
+    @media (min-width: config.$breakpoint-lg) {
+        margin-right: 0;
+        padding-right: 0;
+        max-width: calc(var(--container-width) / 2);
+    }
+}
+
+.cta-3__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 60rem;
+    /* Note: This ensures consistent alignment with the design.
+    If the image changes, this may need to be adjusted or removed */
+    transform: translateX(-19vw);
+
+    @media (min-width: config.$breakpoint-lg) {
+        transform: initial;
+    }
+}
+
+.cta-3__copy-unit {
+    padding-bottom: 5.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.cta-3__copy-container {
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: 0;
+        max-width: calc(var(--container-width) / 2);
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 15rem;
+    }
+}
+
+.cta-3__copy-wrapper {
+    max-width: 39rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        /* Note: This ensures consistent alignment with the design.
+        If the image changes, this may need to be adjusted or removed */
+        margin-top: 4rem;
+    }
+}
+
+.cta-3__title {
+    margin-bottom: 3.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 6rem;
+    }
+}
+
+.cta-3__text {
+    margin-bottom: 4.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 4rem;
+    }
+}

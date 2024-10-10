@@ -1,0 +1,5 @@
+@use "../config.scss";
+
+html {
+    font-size: 62.5%; /* Use rems in a similar way to pxs: 1.6rem === 16px. */
+}

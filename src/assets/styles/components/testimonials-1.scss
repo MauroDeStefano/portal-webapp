@@ -1,0 +1,127 @@
+@use "../config";
+
+.testimonials-1 {
+    @media (min-width: config.$breakpoint-xl) {
+        position: relative;
+        padding-bottom: 23rem;
+    }
+}
+
+.testimonials-1__background-image {
+    display: none;
+
+    @media (min-width: config.$breakpoint-xl) {
+        position: absolute;
+        z-index: -1;
+        inset: auto 0 0 0;
+        width: 116rem;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transform: translateX(-24rem);
+    }
+}
+
+.testimonials-1__copy-unit {
+    padding-top: 5.4rem;
+    padding-bottom: 5.4rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 9.6rem;
+        padding-bottom: 9.6rem;
+    }
+}
+
+.testimonials-1__copy-wrapper {
+    text-align: center;
+}
+
+.testimonials-1__copy-title {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 1rem;
+    }
+}
+
+.testimonials-1__copy-subtitle {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        color: config.$color-gray-400;
+    }
+}
+
+.testimonials-1__reviews-container {
+    position: relative;
+    padding: var(--container-padding);
+    box-sizing: border-box;
+    color: config.$color-white;
+    background-color: config.$color-emerald-500;
+
+    @media (min-width: config.$breakpoint-xs) {
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        max-width: 90rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.testimonials-1__carousel-viewport {
+    margin-bottom: 5.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 8rem;
+    }
+}
+
+.testimonials-1__review-quote {
+    margin: 0;
+}
+
+.testimonials-1__review-text {
+    font-family: config.$font-secondary;
+    font-size: 2.8rem;
+    line-height: 1.3;
+}
+
+.testimonials-1__review-author {
+    font-style: normal;
+}
+
+.testimonials-1__carousel-button {
+    display: none;
+}
+
+@media (hover: hover) and (min-width: config.$breakpoint-xl) {
+    .testimonials-1__carousel-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+        opacity: 0;
+        transition: opacity 300ms;
+        color: config.$color-emerald-500;
+
+        &--prev {
+            left: -8.6rem;
+        }
+
+        &--next {
+            right: -8.6rem;
+        }
+    }
+
+    .testimonials-1__reviews-unit:hover .testimonials-1__carousel-button {
+        opacity: 1;
+    }
+}

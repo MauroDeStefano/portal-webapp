@@ -1,0 +1,328 @@
+@use "../config";
+
+.form__radio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+.form__radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 2.6rem;
+    height: 2.6rem;
+
+    &:focus-visible ~ .form__radio-icon {
+        border-color: config.$color-emerald-700;
+    }
+
+    &:checked ~ .form__radio-icon .form__radio-icon-inner {
+        display: block;
+    }
+}
+
+.form__radio-icon {
+    border-radius: 50%;
+    border: 0.1rem solid config.$color-gray-300;
+    box-sizing: border-box;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: config.$color-white;
+}
+
+.form__radio-icon-inner {
+    display: none;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: currentColor;
+}
+
+.form__radio-label {
+    padding-top: 0.25em;
+    font-size: 1.4rem;
+}
+
+.form__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+.form__checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:focus-visible ~ .form__checkbox-icon {
+        border-color: config.$color-emerald-700;
+    }
+
+    &:checked ~ .form__checkbox-icon svg {
+        display: block;
+    }
+
+    &[disabled]:checked ~ .form__checkbox-icon svg {
+        opacity: .5;
+    }
+}
+
+.form__checkbox-wrapper--busy .loading-spinner svg {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.form__checkbox-icon {
+    border-radius: 0.5rem;
+    border: 0.1rem solid config.$color-gray-300;
+    box-sizing: border-box;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.form__checkbox-icon svg {
+    display: none;
+    width: 1rem;
+    height: auto;
+}
+
+.form__checkbox-label {
+    padding-top: 0.25em;
+    font-size: 1.4rem;
+}
+
+.form__timepicker {
+    border-radius: 3rem;
+    display: flex;
+    overflow: hidden;
+    border: 0.1rem solid config.$color-gray-300;
+    background-color: config.$color-white;
+    padding: 0 0.4rem;
+
+    &:focus-within {
+        border-color: config.$color-emerald-700;
+    }
+}
+
+.form__timepicker-separator {
+    height: 5.2rem;
+    width: 0.1rem;
+    background-color: config.$color-gray-300;
+}
+
+.form__timepicker-input {
+    /* Reset */
+    appearance: none;
+    box-shadow: none;
+    background-color: transparent;
+    /* Customization */
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 5.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: config.$color-gray-700;
+    background-color: config.$color-white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        opacity: 1; /* Firefox opacity fix */
+        color: currentColor;
+    }
+}
+
+.form__textfield-wrapper {
+    width: 100%;
+}
+
+.form__textfield-input {
+    /* Reset */
+    appearance: none;
+    box-shadow: none;
+    background-color: transparent;
+    /* Customization */
+    border-radius: 30rem;
+    border: 0.1rem solid config.$color-gray-300;
+    box-sizing: border-box;
+    padding: 0.2em 2.6rem 0;
+    width: 100%;
+    height: 5.2rem;
+    font-size: 1.4rem;
+    color: config.$color-gray-700;
+    background-color: config.$color-white;
+
+    &--error {
+        border-color: config.$color-red-600;
+        color: config.$color-red-600;
+    }
+
+    &::placeholder {
+        opacity: 1; /* Firefox opacity fix */
+        color: currentColor;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: config.$color-emerald-700;
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+    }
+}
+
+
+.form__textarea-wrapper {
+    width: 100%;
+}
+
+.form__textarea-input {
+    /* Reset */
+    appearance: none;
+    box-shadow: none;
+    background-color: transparent;
+    /* Customization */
+    border-radius: 3rem;
+    border: 0.1rem solid config.$color-gray-300;
+    box-sizing: border-box;
+    padding: 1.8rem 2.6rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: config.$color-gray-700;
+    background-color: config.$color-white;
+    resize: none;
+    display: block;
+
+    &::placeholder {
+        opacity: 1; /* Firefox opacity fix */
+        color: currentColor;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: config.$color-emerald-700;
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+    }
+
+    &--error {
+        color: config.$color-red-600;
+        border-color: config.$color-red-600;
+    }
+}
+
+.form__radio-list-item {
+    cursor: pointer;
+    padding: 1.57em 0 1.4em;
+    border-bottom: 0.1rem solid config.$color-gray-300;
+    font-size: 1.4rem;
+
+    &:hover {
+        color: config.$color-emerald-700;
+    }
+
+    &[aria-disabled="true"] {
+        cursor: default;
+        color: config.$color-gray-300;
+    }
+
+    &[aria-selected="true"] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        color: config.$color-emerald-700;
+    }
+}
+
+.form__radio-list-item-icon {
+    width: 1.4rem;
+    height: auto;
+    padding-top: 0.2em;
+}
+
+.form__select {
+    position: relative;
+    border: 0.1rem solid config.$color-gray-300;
+    border-radius: 3rem;
+    user-select: none;
+
+    &--expanded {
+        border-radius: 3rem 3rem 0 0;
+    }
+}
+
+.form__select-wrapper {
+    padding: 0.95em 2.6rem 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.form__select-label {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.form__select-icon {
+    transition: transform 300ms;
+}
+
+.form__select--expanded .form__select-icon {
+    transform: rotate(180deg);
+}
+
+.form__select-icon svg {
+    display: block;
+    width: auto;
+    height: 0.8rem;
+}
+
+.form__select-options {
+    display: none;
+    border-radius: 0 0 3rem 3rem;
+    border: 0.1rem solid config.$color-gray-300;
+    position: absolute;
+    top: 100%;
+    left: -0.1rem;
+    width: 100%;
+    background-color: config.$color-white;
+}
+
+.form__select--expanded .form__select-options {
+    display: block;
+}
+
+.form__select-option {
+    cursor: pointer;
+    padding: 1.14em 2.6rem 1em;
+    border-bottom: 0.1rem solid config.$color-gray-300;
+    transition: color 200ms;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        color: config.$color-emerald-700;
+    }
+}

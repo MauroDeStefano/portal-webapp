@@ -1,0 +1,75 @@
+@use "../config";
+
+.payment-summary__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        gap: 1rem;
+    }
+}
+
+.payment-summary__item {
+    display: grid;
+    grid-template-columns: 1fr minmax(10rem, 1fr);
+    gap: 1rem;
+}
+
+.payment-summary__item--negative {
+    color: config.$color-emerald-500;
+}
+
+.payment-summary__separator {
+    margin: 2.5rem 0;
+    background-color: config.$color-gray-300;
+    height: 0.1rem;
+    border: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin: 3.5rem 0;
+    }
+}
+
+.payment-summary__label {
+    font-size: 1.4rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 1.8rem;
+    }
+}
+
+.payment-summary__value-wrapper {
+    text-align: right;
+}
+
+.payment-summary__value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+@media (min-width: config.$breakpoint-lg) {
+    .payment-summary__total .payment-summary__value {
+        font-size: 2.4rem;
+    }
+}
+
+.payment-summary__description {
+    font-size: 1.4rem;
+    color: config.$color-stone-500;
+}
+
+.payment-summary__button-wrapper {
+    &--desktop {
+        display: none;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: flex;
+        justify-content: flex-end;
+
+        &--mobile {
+            display: none;
+        }
+    }
+}

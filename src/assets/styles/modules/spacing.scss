@@ -1,0 +1,29 @@
+@use "../config";
+
+:root {
+    --spacing-xs: 2rem;
+    --spacing-sm: 4rem;
+    --spacing-md: 6rem;
+    --spacing-lg: 8rem;
+    --spacing-xl: 12rem;
+    --spacing-2xl: 15rem;
+
+    --spacing-tight: var(--spacing-xs);
+    --spacing-normal: var(--spacing-sm);
+    --spacing-wide: var(--spacing-md);
+    --spacing-wider: var(--spacing-lg);
+
+    @media (min-width: config.$breakpoint-md) {
+        --spacing-tight: var(--spacing-sm);
+        --spacing-normal: var(--spacing-md);
+        --spacing-wide: var(--spacing-lg);
+        --spacing-wider: var(--spacing-xl);
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        --spacing-tight: var(--spacing-md);
+        --spacing-normal: var(--spacing-lg);
+        --spacing-wide: var(--spacing-xl);
+        --spacing-wider: var(--spacing-2xl);
+    }
+}

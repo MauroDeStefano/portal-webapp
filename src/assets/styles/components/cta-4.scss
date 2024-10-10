@@ -1,0 +1,125 @@
+@use "../config";
+
+.cta-4 {
+    @media (min-width: config.$breakpoint-xl) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Solid unit variant */
+/* ---------------------------------- */
+
+.cta-4__solid-unit {
+    position: relative;
+    overflow: hidden;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: config.$color-white;
+    background-color: config.$color-emerald-500;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 11rem;
+        padding-bottom: 22rem;
+    }
+}
+
+.cta-4__solid-unit-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-4__solid-unit-image {
+    position: absolute;
+    inset: auto 0 0 0;
+    margin: auto;
+    width: 14.3rem;
+    height: 3.2rem;
+    object-fit: cover;
+    object-position: top center;
+
+    @media (min-width: config.$breakpoint-md) {
+        width: 26rem;
+        height: 17rem;
+    }
+}
+
+.cta-4__solid-unit-container {
+    --container-width: 64rem;
+}
+
+.cta-4__solid-unit-title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 7rem;
+    }
+}
+
+/* Background unit variant */
+/* ---------------------------------- */
+
+.cta-4__background-unit {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: config.$color-white;
+    background-color: config.$color-black;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 11rem;
+        padding-bottom: 10rem;
+    }
+}
+
+.cta-4__background-unit-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-4__background-unit-image {
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 300ms;
+}
+
+.cta-4__background-unit-container {
+    --container-width: 64rem;
+}
+
+.cta-4__background-unit-title {
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 14rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 24rem;
+    }
+}
+
+@media (hover: hover) {
+    .cta-4__background-unit:hover .cta-4__background-unit-image {
+        transform: scale(1.1);
+    }
+}

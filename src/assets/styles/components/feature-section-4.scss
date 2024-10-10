@@ -1,0 +1,81 @@
+@use "../config";
+
+.feature-section-4__mobile {
+    border-width: 0.1rem 0;
+    border-style: solid;
+    border-color: config.$color-gray-300;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: none;
+    }
+}
+
+.feature-section-4__desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        padding-top: 10rem;
+        padding-bottom: 14rem;
+        background-color: config.$color-amber-200;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 16rem;
+        padding-bottom: 22rem;
+    }
+}
+
+.feature-section-4__title {
+    @media (min-width: config.$breakpoint-lg) {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+.feature-section-4__features-wrapper {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        row-gap: 5.8rem;
+        column-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 11rem;
+    }
+}
+
+.feature-section-4__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+.feature-section-4__feature-icon-wrapper {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.feature-section-4__feature-icon {
+    display: block;
+    width: auto;
+    height: 4rem;
+}
+
+.feature-section-4__feature-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+}

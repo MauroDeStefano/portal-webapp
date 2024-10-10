@@ -1,0 +1,116 @@
+@use "../config";
+
+.additional-services-1__item {
+    border: solid config.$color-gray-300;
+    border-width: 0.1rem 0 0 0;
+    padding: 2.7rem 0;
+
+    @media (max-width: (config.$breakpoint-xl - 1)) {
+        &:first-child {
+            border-width: 0;
+            padding-top: 0;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding: 4.5rem 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 3.8rem;
+    }
+}
+
+.additional-services-1__item-image {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    max-width: 23rem;
+    height: auto;
+    background-color: config.$color-gray-300;
+    margin-bottom: 2.3rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 0;
+    }
+}
+
+.additional-services-1__item-content {
+    margin-bottom: 3rem;
+    max-width: 49rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 4.4rem;
+    }
+}
+
+.additional-services-1__item-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.additional-services-1__item-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.additional-services-1__item-link {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.2em;
+    transition: color 300ms;
+}
+
+@media (hover: hover) {
+    .additional-services-1__item-link:hover {
+        color: config.$color-emerald-700;
+    }
+}
+
+.additional-services-1__item-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: config.$breakpoint-lg) {
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+}
+
+.additional-services-1__item-select {
+    width: 100%;
+
+    @media (min-width: config.$breakpoint-lg) {
+        max-width: 38rem;
+    }
+}
+
+.additional-services-1__item-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: auto;
+    }
+}
+
+.additional-services-1__item-added svg {
+    display: block;
+    height: 5.2rem;
+    width: 5.2rem;
+    color: config.$color-emerald-700;
+}

@@ -1,0 +1,11 @@
+@use "../config";
+
+.cta-7__title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,78 @@
+@use "../config";
+
+.content-2 {
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 6.7rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 6rem;
+        padding-bottom: 9.6rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 12.8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 9rem;
+        padding-bottom: 22.4rem;
+    }
+}
+
+.content-2__wrapper {
+    //opacity: 0;
+    //transform: translateY(40vh);
+}
+
+.content-2__item {
+    position: relative;
+    color: config.$color-emerald-700;
+    //opacity: 0.2;
+
+    &--light-green {
+        color: config.$color-emerald-500;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: grid;
+        grid-template-columns: 5rem 1fr 5rem;
+        gap: 5rem;
+
+        &.content-2__item--icon-reverse {
+            .content-2__icon-spacer {
+                order: -1;
+            }
+            .content-2__icon {
+                order: 100;
+            }
+        }
+    }
+}
+
+.content-2__text {
+    font-family: config.$font-secondary;
+    font-size: 3.1rem;
+    font-weight: 500;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 5rem;
+    }
+
+    .underline {
+        text-decoration-thickness: 0.3rem;
+        text-underline-offset: 0.2em;
+    }
+}
+
+.content-2__icon {
+    display: none;
+    width: 5rem;
+    height: auto;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        translate: 0 3rem;
+    }
+}

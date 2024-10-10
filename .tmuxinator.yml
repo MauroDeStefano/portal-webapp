@@ -1,0 +1,11 @@
+name: Friland
+
+windows:
+  - Friland:
+      layout: 791e,422x73,0,0{211x73,0,0,11,210x73,212,0[210x37,212,0,12,210x35,212,38,13]}
+      panes:
+        - main:
+        - next_watch:
+            - nvm use 21 && npm run dev
+        - storybook:
+            - nvm use 21 && npm run storybook

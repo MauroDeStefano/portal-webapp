@@ -1,0 +1,15 @@
+.desktopNavWrapper {
+    position: fixed !important;
+    z-index: 1;
+    inset: auto 0 5rem 0;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.desktopNavWrapper > div {
+    overflow: hidden;
+    display: flex;
+    border: 0.5rem solid #38695b;
+    border-radius: 4.8rem;
+    box-shadow: 0 0.3rem 0.6rem hsla(0, 0%, 0%, 0.3);
+}

@@ -1,0 +1,135 @@
+@use "../config";
+
+// Base
+// -----------------------------------------
+body {
+    font-family: config.$font-primary;
+    font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
+    line-height: 1.6;
+    color: config.$color-gray-700;
+}
+
+// Paragraphs
+// -----------------------------------------
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+// Headings
+// -----------------------------------------
+%heading {
+    margin-top: 0;
+    margin-bottom: 0.67em;
+    font-weight: 700;
+    line-height: 1.27;
+}
+
+h1,
+.h1 {
+    @extend %heading;
+    font-size: 3.3rem;
+}
+
+h2,
+.h2 {
+    @extend %heading;
+    font-size: 2.4rem;
+}
+
+h3,
+.h3 {
+    @extend %heading;
+    font-size: 1.9rem;
+}
+
+h4,
+.h4 {
+    @extend %heading;
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    @extend %heading;
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    @extend %heading;
+    font-size: 1.2rem;
+}
+
+// Displays
+// -----------------------------------------
+%display {
+    font-weight: 300;
+}
+
+%display .underline {
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: 0.2em;
+}
+
+.display--24 {
+    @extend %display;
+    font-size: 1.8rem;
+    line-height: 1.6;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.display--34 {
+    @extend %display;
+    font-size: 2.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 3.4rem;
+    }
+}
+
+.display--36 {
+    @extend %display;
+    font-size: 2.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 3.6rem;
+    }
+}
+
+.display--54 {
+    @extend %display;
+    font-size: 4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 5.4rem;
+    }
+}
+
+// Text
+// -----------------------------------------
+%text {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.text--12 {
+    @extend %text;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.text--13 {
+    @extend %text;
+    font-size: 1.3rem;
+}
+
+.text--18 {
+    @extend %text;
+    font-size: 1.8rem;
+}

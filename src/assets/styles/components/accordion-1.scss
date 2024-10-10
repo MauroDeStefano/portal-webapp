@@ -1,0 +1,44 @@
+@use "../config";
+
+.accordion-1__title {
+    margin-bottom: 0;
+}
+
+.accordion-1__button {
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    &[aria-expanded="true"] .accordion-1__button-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.accordion-1__button-icon {
+    width: auto;
+    height: 0.9rem;
+    display: block;
+    transition: transform 300ms;
+}
+
+.accordion-1__content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+
+    &[aria-hidden="false"] {
+        grid-template-rows: 1fr;
+    }
+}
+
+.accordion-1__content-container {
+    overflow: hidden;
+}
+
+.accordion-1__content {
+    padding-bottom: 6rem;
+}

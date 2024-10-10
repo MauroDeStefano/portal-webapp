@@ -1,0 +1,32 @@
+@use "../config";
+
+.book__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.book__section-title {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid config.$color-gray-300;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.book__date-selection-range {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid config.$color-gray-300;
+    font-size: 1.8rem;
+}
+
+.book__calendar {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.book__guests {
+    margin-bottom: 2.5rem;
+}

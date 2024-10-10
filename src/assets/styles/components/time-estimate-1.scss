@@ -1,0 +1,14 @@
+@use "../config";
+
+.time-estimate-1 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.time-estimate-1 a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.2em;
+}

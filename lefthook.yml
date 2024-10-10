@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    lint_tsx:
+      run: npm run type-check
+
+post-merge:
+  commands:
+    npm_install:
+      run: npm install
+    copy_icons:
+      run: npm run sync-icons

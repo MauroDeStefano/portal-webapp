@@ -1,0 +1,49 @@
+@use "../config";
+
+.stay-overview-1__num-nights {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.stay-overview-1__details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-end;
+}
+
+.stay-overview-1__price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.stay-overview-1__options {
+    margin-top: 2.6rem;
+    padding-top: 2.6rem;
+    border-top: 0.1rem solid config.$color-gray-300;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3.2rem;
+        padding-top: 3.2rem;
+    }
+}
+
+.stay-overview-1__option {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.stay-overview-1__option-description {
+    grid-column: span 2;
+    padding: 2.8rem;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    background-color: config.$color-amber-200;
+}

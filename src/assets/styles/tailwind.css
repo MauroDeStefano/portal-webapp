@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .5;
+}
+
+/*****************************************************/
+
+.fade-in-out-enter {
+    opacity: 0;
+}
+
+.fade-in-out-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+.fade-in-out-exit {
+    opacity: 1;
+}
+
+.fade-in-out-exit-active {
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+
+/*****************************************************/
+
+.slide-left-in-out-enter {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.slide-left-in-out-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+.slide-left-in-out-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-left-in-out-exit-active {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+/*****************************************************/
+
+.slide-in-out-enter {
+    transform: translateY(-20px);
+}
+
+.slide-in-out-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+
+}
+
+.slide-in-out-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-out-exit-active {
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translateY(-20px);
+}
+
+/*****************************************************/
+
+.will-fade-out-and-gone {
+    transition: all 0s linear 0.55s, opacity 0.5s linear;
+}
+
+.will-fade-out-and-gone svg {
+    transition: all 0.5s ease-in-out;
+}
+
+.will-fade-out-and-gone.and-gone svg {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.will-fade-out-and-gone.and-gone {
+    opacity: 0;
+    transform: scale(0);
+    left: -100vw;
+    top: -100vh;
+}
+
+/*****************************************************/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinning-loading-indicator {
+    animation: spin .5s linear infinite;
+}
+
+.loading-spinner {
+
+}
+
+.loading-spinner svg {
+    width: 100% !important;
+    height: 100% !important;
+    color: var(--spinner-color, currentColor);
+    animation: spin 1s linear infinite;
+}
+
+.error-message {
+    border: 1px solid #c00;
+    background: #efc3c3;
+    padding: 1rem 0;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mep-next-iubenda-loading {
+    box-sizing: border-box;
+}

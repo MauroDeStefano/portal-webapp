@@ -1,0 +1,88 @@
+@use "../config";
+
+.cta-10 {
+    position: relative;
+    background-color: config.$color-amber-50;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.cta-10__unit-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-10__image-unit {
+    position: relative;
+    padding-bottom: 68%;
+    overflow: hidden;
+}
+
+.cta-10__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms;
+}
+
+@media (hover: hover) {
+    .cta-10:hover .cta-10__image {
+        transform: scale(1.05);
+    }
+}
+
+.cta-10__content-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.cta-10__content {
+    max-width: 60rem;
+    text-align: center;
+}
+
+.cta-10__date {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cta-10__title {
+    font-size: 4rem;
+    font-family: config.$font-secondary;
+    font-weight: 400;
+    color: config.$color-emerald-700;
+    margin-bottom: 3.8rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.cta-10__text {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.cta-10__button-wrapper {
+    position: relative;
+    z-index: 2;
+}

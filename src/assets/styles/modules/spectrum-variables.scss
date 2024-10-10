@@ -1,0 +1,50 @@
+:root {
+    --spectrum-calendar-day-padding: 5px;
+    --spectrum-calendar-day-width: 50px;
+    --spectrum-calendar-day-height: 50px;
+    --spectrum-calendar-day-text-size: 16px;
+
+}
+
+.friland-calendar.friland-calendar * {
+    --spectrum-calendar-day-background-color-cap-selected: #38695b;
+    --spectrum-calendar-day-background-color-cap-selected-hover: #38695b;
+    --spectrum-calendar-day-background-color-cap-selected-down: #38695b;
+    --spectrum-calendar-day-background-color-cap-invalid-selected: #38695b;
+    --spectrum-calendar-day-background-color-cap-invalid-selected-hover: #38695b;
+    --spectrum-calendar-day-background-color-cap-invalid-selected-down: #38695b;
+
+    --spectrum-calendar-day-background-color-invalid-selected: #ccc;
+    --spectrum-calendar-day-background-color-selected: #38695b;
+    --spectrum-calendar-day-background-color-selected-hover: #fff;
+
+    --spectrum-calendar-day-text-color-disabled: #999;
+
+    --spectrum-calendar-day-text-color-cap-selected: white;
+    --spectrum-calendar-day-text-color-cap-selected-hover: white;
+
+    --spectrum-calendar-day-today-text-color: #fff;
+    --spectrum-calendar-day-today-background-color: #77968a;
+    --spectrum-calendar-day-today-background-color-hover: #38695b;
+    --spectrum-calendar-day-today-background-color-down: #38695b;
+
+    --spectrum-calendar-day-text-color-hover: #fff;
+    --spectrum-calendar-day-background-color-hover: #38695b;
+    --spectrum-calendar-day-text-color-selected-hover: #fff;
+
+    --spectrum-alias-background-color-default: #fff;
+    --spectrum-global-color-gray-100: #fff;
+}
+
+.friland-calendar.friland-calendar td[aria-selected="true"] {
+    color: #fff
+}
+
+.friland-calendar.friland-calendar [class*="Calendar-header"] svg {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.friland-calendar.friland-calendar button {
+    border: 0;
+}

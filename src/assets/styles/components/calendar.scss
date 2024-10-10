@@ -1,0 +1,119 @@
+@use "../config";
+
+.calendar {
+    --cell-width: 3.8rem;
+    --cell-height: 4.5rem;
+    font-size: 1.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        --cell-width: 4.8rem;
+        --cell-height: 4.8rem;
+        font-size: 1.6rem;
+    }
+}
+
+.calendar__header {
+    position: relative;
+    margin-bottom: 3.6rem;
+}
+
+.calendar__button {
+    --icon-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: var(--cell-width);
+    height: var(--cell-width);
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: var(--icon-size);
+        height: var(--icon-size);
+    }
+
+    &--prev {
+        left: 0;
+    }
+
+    &--next {
+        right: 0;
+    }
+
+    &:hover {
+        border-color: config.$color-gray-300;
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        --icon-size: 1.5rem;
+    }
+}
+
+.calendar__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    translate: 0 0.135em; // Compensate line-height
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.calendar__table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar__table-head-cell {
+    width: var(--cell-width);
+    height: var(--cell-height);
+    font-weight: 600;
+}
+
+.calendar__table-body-cell {
+    width: var(--cell-width);
+    height: var(--cell-height);
+
+    &.in-range {
+        color: config.$color-white;
+        background-color: config.$color-emerald-700;
+    }
+
+    &.selected {
+        color: config.$color-white;
+        background-color: config.$color-emerald-700;
+        border-radius: 50%;
+    }
+
+    &.selected:has(+ &.in-range) {
+        border-radius: 50% 0 0 50%;
+    }
+
+    &.in-range + &.selected {
+        border-radius: 0 50% 50% 0;
+    }
+}
+
+.calendar__table-body-cell-inner {
+    cursor: pointer;
+    padding-top: 0.1em; // compensate line-height
+    box-sizing: border-box;
+    width: var(--cell-width);
+    height: var(--cell-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &[aria-disabled="true"] {
+        color: config.$color-gray-300;
+    }
+}

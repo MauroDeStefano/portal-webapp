@@ -1,0 +1,170 @@
+@use "../config";
+
+.destination-list-1 {
+    border: solid config.$color-stone-500;
+    border-width: 0.1rem 0;
+    background-color: config.$color-amber-200;
+}
+
+.destination-list-1__container {
+    @media (min-width: config.$breakpoint-xl) {
+        display: flex;
+    }
+
+    @media (min-width: config.$breakpoint-2xl) {
+        max-width: 170rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.destination-list-1__header {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 3rem;
+        border-right: 0.1rem solid config.$color-stone-500;
+    }
+
+    @media (min-width: config.$breakpoint-2xl) {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+.destination-list-1__header-container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: inherit;
+}
+
+.destination-list-1__header-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.destination-list-1__body {
+    padding-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 0;
+        flex: 1;
+    }
+}
+
+.destination-list-1__body-container {
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+}
+
+.destination-list-1__body-wrapper {
+    --col-num: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+
+    @media (min-width: config.$breakpoint-xl) {
+        --col-num: 3;
+    }
+}
+
+.destination-list-1__item {
+    position: relative;
+    border: solid config.$color-stone-500;
+    border-width: 0.1rem 0.1rem 0;
+    padding: 4rem 4.5rem 5rem 4.6rem;
+    transition: background-color 300ms;
+
+    &:last-child {
+        border-width: 0.1rem;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: config.$color-amber-50;
+        }
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        border-width: 0 0.1rem 0 0;
+        padding: 4rem 3rem;
+
+        &:last-child {
+            border-width: 0;
+        }
+    }
+
+    @media (min-width: config.$breakpoint-2xl) {
+        padding: 4rem;
+    }
+}
+
+.destination-list-1__item-unit-link {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.destination-list-1__item-image {
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 0rem;
+        margin-right: 2.6rem;
+        max-width: 10rem;
+    }
+}
+
+.destination-list-1__item-content {
+    margin-bottom: 6rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 0rem;
+    }
+}
+
+.destination-list-1__item-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.destination-list-1__item-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.destination-list-1__item-button-wrapper {
+    @media (min-width: config.$breakpoint-md) {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 2rem;
+    }
+}
+
+.destination-list-1__item-button-wrapper svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}

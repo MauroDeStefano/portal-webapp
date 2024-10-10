@@ -1,0 +1,101 @@
+@use "../config";
+
+.anchor-links-1__header {
+    margin-bottom: 5.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 3.8rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 524px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 10.8rem;
+        row-gap: 6rem;
+    }
+}
+
+.anchor-links-1__header-item {
+    color: config.$color-emerald-700;
+    text-align: center;
+}
+
+@media (hover: hover) {
+    .anchor-links-1__header-item:hover .anchor-links-1__header-item-circle {
+        transform: scale(1.11);
+    }
+}
+
+.anchor-links-1__header-item-circle-wrapper {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 10.8rem;
+    height: 10.8rem;
+    margin-bottom: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    isolation: isolate;
+}
+
+.anchor-links-1__header-item-circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: config.$color-amber-50;
+    transition: transform 300ms;
+}
+
+.anchor-links-1__header-item-circle-wrapper  {
+    svg, img {
+        height: 5rem;
+        width: 5rem;
+        object-fit: contain;
+    }
+}
+
+.anchor-links-1__header-item-label {
+    font-size: 1.3rem;
+}
+
+.anchor-links-1__sections-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-bottom: 6.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 9.8rem;
+        margin-bottom: 20rem;
+    }
+}
+
+.anchor-links-1__section-title {
+    text-align: center;
+    margin-bottom: 3.5;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 9.8rem;
+    }
+}
+
+.anchor-links-1__section-content {
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 9.8rem;
+    }
+}
+
+.anchor-links-1__section-actions {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,37 @@
+@use "../config";
+
+.radio-accordion {
+    background-color: config.$color-amber-200;
+}
+
+.radio-accordion__item {
+    border-bottom: 0.1rem solid config.$color-white;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.radio-accordion__item-option {
+    padding: 1.8rem;
+}
+
+.radio-accordion__item-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms;
+}
+
+.radio-accordion__item-content[aria-hidden="false"] {
+    grid-template-rows: 1fr;
+}
+
+.radio-accordion__item-content-container {
+    overflow: hidden;
+}
+
+.radio-accordion__item-content-wrapper {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-bottom: 3rem;
+}

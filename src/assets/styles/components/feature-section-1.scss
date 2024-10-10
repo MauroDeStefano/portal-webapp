@@ -1,0 +1,113 @@
+@use "../config";
+
+.feature-section-1 {
+    @media (min-width: config.$breakpoint-lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.feature-section-1__cta {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+}
+
+.feature-section-1__cta-container {
+    @media (min-width: config.$breakpoint-lg) {
+        margin-right: 0;
+        max-width: calc(var(--container-width) / 2);
+    }
+}
+
+.feature-section-1__cta-wrapper {
+    max-width: 39rem;
+}
+
+.feature-section-1__cta-button {
+    margin-top: 3.8rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-top: 5rem;
+    }
+}
+
+.feature-section-1__features {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+    }
+}
+
+.feature-section-1__features-container {
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: 0;
+        max-width: calc(var(--container-width) / 2);
+    }
+}
+
+.feature-section-1__features-wrapper {
+    --col-num: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    row-gap: 5.4rem;
+    column-gap: 2rem;
+
+    @media (min-width: config.$breakpoint-sm) {
+        --col-num: 3;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        --col-num: 2;
+        width: max-content;
+        margin: auto;
+        row-gap: 7rem;
+        column-gap: 9rem;
+    }
+}
+
+.feature-section-1__feature-item {
+    text-align: center;
+    max-width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-section-1__feature-icon {
+    width: auto;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.feature-section-1__feature-title {
+    margin-bottom: 0;
+}

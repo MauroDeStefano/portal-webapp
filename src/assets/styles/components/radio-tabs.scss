@@ -1,0 +1,22 @@
+@use "../config";
+
+.radio-tabs {
+    background-color: config.$color-amber-200;
+}
+
+.radio-tabs__options {
+    padding: 3.2rem 3.4rem;
+    display: flex;
+    align-items: center;
+    gap: 5.7rem;
+}
+
+.radio-tabs__content {
+    display: none;
+    border-top: 0.1rem solid config.$color-white;
+    padding: 3.2rem 3.4rem;
+
+    &.active {
+        display: block;
+    }
+}

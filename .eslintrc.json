@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ],
+  "plugins": ["simple-import-sort"],
+
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/no-children-prop": [
+      1,
+      {
+        "allowFunctions": true
+      }
+    ],
+    "@next/next/no-img-element": "off",
+    "@next/next/no-page-custom-font": "off",
+
+    "jsx-a11y/role-has-required-aria-props": "off",
+    "jsx-a11y/alt-text": "off",
+
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          // Packages `react` related packages come first.
+          ["^react", "^@?\\w"],
+          // Internal packages.
+          ["^(@|app)(/.*|$)"],
+          // Side effect imports.
+          ["^\\u0000"],
+          // Parent imports. Put `..` last.
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          // Other relative imports. Put same-folder imports and `.` last.
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          // Style imports.
+          ["^.+\\.?(css)$"]
+        ]
+      }
+    ]
+  }
+}

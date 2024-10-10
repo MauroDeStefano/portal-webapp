@@ -1,0 +1,38 @@
+@use "../config";
+
+.button-2 {
+    --color: currentColor;
+    --color-hover: currentColor;
+    --color-active: currentColor;
+
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid var(--color);
+    transition: color 300ms, border-color 300ms;
+    color: var(--color);
+
+    &:hover {
+        border-color: var(--color-hover);
+        color: var(--color-hover);
+    }
+
+    &--active {
+        border-color: var(--color-active);
+        color: var(--color-active);
+    }
+}
+
+.button-2__label {
+    font-weight: 600;
+    //transform: translateY(0.16em);
+}
+
+.button-2__icon svg {
+    display: block;
+    width: auto;
+    height: 1.6rem;
+}

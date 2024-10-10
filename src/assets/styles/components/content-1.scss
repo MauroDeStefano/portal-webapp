@@ -1,0 +1,36 @@
+@use "../config";
+
+.content-1 {
+    padding-top: 3.7rem;
+    padding-bottom: 4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 9.8rem;
+        padding-bottom: 14.5rem;
+    }
+}
+
+.content-1__content p {
+    margin-bottom: 2em;
+}
+
+.content-1__content hr {
+    margin: 2em 0;
+    border-top: 0.1rem solid config.$color-gray-300;
+}
+
+.content-1__content small {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+}
+
+.content-1__content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2em 0 1.4em;
+    }
+}

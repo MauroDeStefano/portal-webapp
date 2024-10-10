@@ -1,0 +1,31 @@
+@use "../config";
+
+.button-4 {
+    --color: #{config.$color-white};
+    --background-color: #{config.$color-emerald-700};
+
+    cursor: pointer;
+    border-radius: 4rem;
+    padding: 1.7rem 1.9rem 1.7rem 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+    width: max-content;
+    color: var(--color);
+    background-color: var(--background-color);
+}
+
+.button-4__label {
+    padding-top: 0.2em;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button-4__icon svg {
+    display: block;
+    width: auto;
+    height: 1.5rem;
+}

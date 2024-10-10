@@ -1,0 +1,101 @@
+@use "../config";
+
+.features-modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.features-modal__wrapper {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background-color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-lg) {
+        top: 11rem;
+        bottom: 11rem;
+        height: calc(100% - 22rem);
+        width: calc(100% - var(--container-padding) * 2);
+        max-width: calc(var(--container-width) - var(--container-padding) * 2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.features-modal__header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 5.7rem;
+    }
+}
+
+.features-modal__close {
+    cursor: pointer;
+}
+
+.features-modal__close svg {
+    display: block;
+    width: auto;
+    height: 1.6rem;
+}
+
+.features-modal__body {
+    --col-num: 1;
+    --col-gap: 4rem;
+    // --row-gap: 3.5rem;
+    padding-bottom: 5rem;
+    padding-left: var(--container-padding);
+    padding-right: calc(var(--container-padding) + 4rem);
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+
+    //@media (min-width: config.$breakpoint-md) {
+     //   --col-num: 2;
+   // }
+}
+
+.features-modal__feature {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 2.8rem;
+    // max-width: 30rem;
+    max-width: 80%;
+    align-items: center;
+}
+
+.features-modal__feature-icon-wrapper svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.features-modal__feature-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.features-modal__feature-description a {
+    font-weight: 700;
+    text-decoration: underline;
+}

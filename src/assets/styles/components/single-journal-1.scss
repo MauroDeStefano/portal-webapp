@@ -1,0 +1,44 @@
+@use "../config";
+
+.single-journal-1 {
+    background-color: config.$color-amber-50;
+}
+
+.single-journal-1__header {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.single-journal-1__header-container {
+    --container-width: 95rem;
+}
+
+.single-journal-1__header-title {
+    margin-bottom: 0;
+}
+
+.single-journal-1__time-estimate-wrapper {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.single-journal-1__footer {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-top: 14rem;
+        padding-bottom: 14rem;
+    }
+}
+
+.single-journal-1__footer-container {
+    --container-width: 117rem;
+}
+
+.single-journal-1__footer-button {
+    --icon-color: currentColor;
+    --label-color: currentColor;
+    --circle-border-color: currentColor;
+}

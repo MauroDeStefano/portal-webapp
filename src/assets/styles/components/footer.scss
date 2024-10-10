@@ -1,0 +1,279 @@
+@use "../config";
+
+/* Note: while similar to other elements, these footer titles
+have a specific margin and line-height designed for harmonious alignment
+with other footer elements. */
+%title {
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+    line-height: 2;
+    text-transform: uppercase;
+    color: config.$color-amber-50;
+}
+
+.footer {
+    --container-width: 144rem;
+
+    padding-top: 5.4rem;
+    padding-bottom: 5.4rem;
+    color: config.$color-stone-500;
+    background-color: config.$color-gray-800;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 11rem;
+    }
+}
+
+.footer__units-wrapper {
+    display: grid;
+    gap: 8rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.footer__branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 7rem;
+    }
+}
+
+.footer__logo {
+    display: block;
+    width: 8rem;
+    height: auto;
+
+    @media (min-width: config.$breakpoint-xl) {
+        width: 10rem;
+    }
+}
+
+.footer__nav {
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-sm) {
+        gap: 9rem;
+        flex-direction: row;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 7rem;
+    }
+}
+
+.footer__nav-unit {
+    max-width: 20rem;
+}
+
+.footer__nav-title {
+    @extend %title;
+}
+
+.footer__nav-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__nav-link {
+    transition: color 300ms;
+
+    @media (hover: hover) {
+        &:hover {
+            color: config.$color-amber-50;
+        }
+    }
+}
+
+.footer__company-info {
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 6rem;
+    }
+}
+
+.footer__legal {
+    @media (min-width: config.$breakpoint-lg) {
+        gap: 3.6rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer__legal-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+    column-gap: 2.6rem;
+}
+
+.footer__legal-link {
+    transition: color 300ms;
+
+    @media (hover: hover) {
+        &:hover {
+            color: config.$color-amber-50;
+        }
+    }
+}
+
+.footer__newsletter {
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 5.3rem;
+    }
+}
+
+.footer__newsletter-icon {
+    display: block;
+    width: auto;
+    height: 3.3rem;
+    /* Align the newsletter title with the nav list */
+    margin-bottom: 7rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        /* Ensure alignment between the baseline
+        of the newsletter icon and the logo */
+        margin-top: 6.6rem;
+    }
+}
+
+.footer__newsletter-title {
+    @extend %title;
+}
+
+.footer__newsletter-text {
+    margin-bottom: 3rem;
+}
+
+.footer__newsletter-form {
+    position: relative;
+    padding-left: 2.6rem;
+    padding-right: 0.2rem;
+    border-radius: 5.2rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: config.$color-white;
+
+    &:hover .footer__newsletter-submit-circle,
+    &:focus-within .footer__newsletter-submit-circle {
+        transform: scale(1.1);
+    }
+}
+
+.footer__newsletter-input {
+    border: none;
+    padding: 0;
+    height: 5.2rem;
+    flex: 1;
+    font-size: 1.4rem;
+
+    &::placeholder {
+        opacity: 1; /* FF sets opacity to 0.5 */
+        font-style: italic;
+        color: config.$color-gray-800;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer__newsletter-submit {
+    position: relative;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: config.$color-amber-50;
+    isolation: isolate;
+}
+
+.footer__newsletter-submit-circle {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: transform 300ms;
+    background-color: config.$color-gray-800;
+}
+
+.footer__newsletter-submit svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}
+
+.footer__newsletter-disclaimer {
+    font-style: italic;
+}
+
+.footer__newsletter-disclaimer a {
+    transition: color 300ms;
+
+    @media (hover: hover) {
+        &:hover {
+            color: config.$color-amber-50;
+        }
+    }
+}
+
+.footer__social-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer__social-button,
+.footer__language-button {
+    --color: currentColor;
+    --color-hover: #{config.$color-amber-50};
+    --color-active: #{config.$color-amber-50};
+}
+
+.footer__language--desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: block;
+    }
+}
+
+.footer__language--mobile {
+    @media (min-width: config.$breakpoint-xl) {
+        display: none;
+    }
+}
+
+.footer__language-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}

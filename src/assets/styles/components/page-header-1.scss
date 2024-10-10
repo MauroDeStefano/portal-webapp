@@ -1,0 +1,54 @@
+@use "../config";
+
+.card-1 + .page-header-1 {
+    margin-top: 2.2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 4rem;
+    }
+}
+
+.page-header-1 {
+    display: flex;
+    margin-bottom: 2rem;
+
+    &--mobile-center {
+        justify-content: center;
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+    }
+
+    &--with-action {
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+.page-header-1__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 3.4rem;
+    }
+}
+
+.page-header-1__action-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: config.$color-emerald-700;
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.2em;
+        }
+    }
+}

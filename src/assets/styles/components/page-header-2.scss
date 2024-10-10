@@ -1,0 +1,77 @@
+@use "../config";
+
+.page-header-2 {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 4.4rem;
+    text-align: center;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8.6rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.page-header-2__logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.6rem;
+    max-width: max-content;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 7.6rem;
+    }
+}
+
+.page-header-2__logo svg {
+    display: block;
+    width: auto;
+    height: 8rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        height: 9.6rem;
+    }
+}
+
+.page-header-2__logo path {
+    fill: config.$color-emerald-700;
+}
+
+.page-header-2__title {
+    color: config.$color-emerald-700;
+    margin-bottom: 0;
+}
+
+.page-header-2__back-button {
+    cursor: pointer;
+    position: absolute;
+    top: 7rem;
+    left: max(
+        var(--container-padding),
+        calc((100% - var(--container-width)) / 2) + var(--container-padding)
+    );
+    z-index: 1;
+    transition: transform 300ms;
+
+    @media (min-width: config.$breakpoint-lg) {
+        top: 25.4rem;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.page-header-2__back-button svg {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    color: config.$color-emerald-700;
+
+    @media (min-width: config.$breakpoint-lg) {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+}

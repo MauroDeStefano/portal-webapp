@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="58.8" height="50.8" viewBox="0 0 58.8 50.8">
+  <g id="Group_285" data-name="Group 285" transform="translate(-973.58 -1068.411)">
+    <rect id="Rectangle_480" data-name="Rectangle 480" width="35" height="9" transform="translate(996.58 1087.211)"  stroke="#7ca365" fill="transparent" stroke-width="1.6"/>
+    <rect id="Rectangle_478" data-name="Rectangle 478" width="35" height="9" transform="translate(996.58 1105.211)"  stroke="#7ca365" fill="transparent" stroke-width="1.6"/>
+    <rect id="Rectangle_479" data-name="Rectangle 479" width="35" height="9" transform="translate(992.58 1096.211)"  stroke="#7ca365" fill="transparent" stroke-width="1.6"/>
+    <rect id="Rectangle_481" data-name="Rectangle 481" width="35" height="9" transform="translate(992.58 1078.211)"  stroke="#7ca365" fill="transparent" stroke-width="1.6"/>
+    <rect id="Rectangle_482" data-name="Rectangle 482" width="35" height="9" transform="translate(996.58 1069.211)"  stroke="#7ca365" fill="transparent" stroke-width="1.6"/>
+    <g id="Ellipse_194" data-name="Ellipse 194" transform="translate(979.58 1085.211)"  fill="#ffffff" stroke="#7ca365" stroke-width="1.6">
+      <circle cx="17" cy="17" r="17" stroke="none"/>
+      <circle cx="17" cy="17" r="16.2" fill="none"/>
+    </g>
+    <text id="_" data-name="€" transform="translate(973.58 1093.211)" fill="#7ca365" font-size="16" font-family="Overpass-Regular, Overpass"><tspan x="16.952" y="14">€</tspan></text>
+  </g>
+</svg>

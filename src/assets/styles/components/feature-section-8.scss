@@ -1,0 +1,120 @@
+@use "../config";
+
+.feature-section-8 {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 17rem;
+        padding-bottom: 17rem;
+    }
+}
+
+.feature-section-8__header {
+    text-align: center;
+    margin-bottom: 4.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 6rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 12.5rem;
+    }
+}
+
+.feature-section-8__header-container {
+    --container-width: 72rem;
+}
+
+.feature-section-8__header-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.feature-section-8__header-title {
+    margin-bottom: 2.4rem;
+}
+
+.feature-section-8__header-text {
+    max-width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: config.$color-gray-400;
+}
+
+.feature-section-8__body-container {
+    --container-width: 100rem;
+}
+
+.feature-section-8__body-wrapper {
+    --col-num: 1;
+    --col-gap: 6rem;
+    --row-gap: 6rem;
+
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+
+    @media (min-width: config.$breakpoint-md) {
+        --col-num: 2;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        --col-num: 3;
+    }
+}
+
+.feature-section-8__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2.6rem;
+    max-width: 40rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        grid-template-columns: 1fr;
+        max-width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.feature-section-8__item-icon-wrapper {
+    display: grid;
+    place-items: center;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-section-8__item-icon-wrapper svg {
+    display: block;
+    width: auto;
+    height: 4rem;
+}
+
+.feature-section-8__item-title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    font-style: italic;
+    color: config.$color-emerald-700;
+    margin-bottom: 0rem;
+}
+
+.feature-section-8__item-text {
+    margin-bottom: 0;
+}

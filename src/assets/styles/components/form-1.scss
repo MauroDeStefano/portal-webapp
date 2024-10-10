@@ -1,0 +1,112 @@
+@use "../config";
+
+.form-1 {
+    padding-top: 6.3rem;
+    padding-bottom: 6.3rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 14rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.form-1__title {
+    text-align: center;
+    margin-bottom: 6rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 11rem;
+    }
+}
+
+.form-1__form-notes {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 3rem;
+    }
+}
+
+.form-1__form-notes a {
+    font-weight: 700;
+}
+
+.form-1__fields-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 1.6rem;
+    }
+}
+
+.form-1__form-field {
+    grid-column: span 2;
+
+    @media (min-width: config.$breakpoint-md) {
+        &.half-width {
+            grid-column: span 1;
+        }
+    }
+}
+
+.form-1__form-upload {
+    margin: 3rem 0;
+}
+
+.form-1__form-checkbox {
+    margin-top: 2.5rem;
+    margin-bottom: 1.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.contact-form__tabs {
+    --col-num: 1;
+    --col-gap: 1.4rem;
+    --row-gap: 1.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+    margin: 2.4rem 0;
+
+    @media (min-width: config.$breakpoint-xl) {
+        --col-num: 3;
+    }
+}
+
+.contact-form__tab {
+    border-radius: 3rem;
+    border: 0.5rem solid config.$color-gray-300;
+
+    > label {
+        padding: 2.5rem 3rem;
+        cursor: pointer;
+    }
+
+    &:has(:checked) {
+        border-color: config.$color-emerald-700;
+    }
+}
+
+.contact-form__tab .form__checkbox-wrapper {
+    align-items: flex-start;
+}

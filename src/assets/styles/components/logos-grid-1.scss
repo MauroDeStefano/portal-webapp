@@ -1,0 +1,67 @@
+@use "../config";
+
+.logos-grid-1__header {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 12rem;
+    }
+}
+
+.logos-grid-1__header-container {
+    --container-width: 84rem;
+}
+
+.logos-grid-1__header-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.logos-grid-1__header-title {
+    margin-bottom: 0;
+}
+
+.logos-grid-1__body {
+    margin-bottom: 8rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 10rem;
+    }
+}
+
+.logos-grid-1__body-wrapper {
+    --col-num: 2;
+    --row-gap: 5rem;
+    --col-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+
+    @media (min-width: config.$breakpoint-lg) {
+        --col-num: 4;
+        --row-gap: 6rem;
+    }
+}
+
+.logos-grid-1__item {
+    position: relative;
+    padding-bottom: 45%;
+}
+
+.logos-grid-1__item-logo {
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    max-width: 16rem;
+    margin: auto;
+}

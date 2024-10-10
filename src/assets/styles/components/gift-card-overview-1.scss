@@ -1,0 +1,130 @@
+@use "../config";
+
+.gift-card-overview-1__num-nights {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.gift-card-overview-1__details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-end;
+}
+
+.gift-card-overview-1__dates {
+    font-size: 1.4rem;
+    font-style: italic;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.gift-card-overview-1__price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.gift-card-overview-1__actions {
+    margin-top: 2.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3.8rem;
+    }
+}
+
+.gift-card-overview-1__action {
+    border-top: 0.1rem solid config.$color-gray-300;
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding: 2.7rem 0;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        grid-template-columns: 2fr 3fr;
+        gap: 2.8rem;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.gift-card-overview-1__action-description {
+    color: config.$color-gray-400;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-xl) {
+        text-align: right;
+    }
+}
+
+.gift-card-overview-1__form {
+    border-top: 0.1rem solid config.$color-gray-300;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3.8rem;
+        padding-top: 5rem;
+    }
+}
+
+.gift-card-overview-1__form-wrapper {
+    padding: 2.5rem 2.5rem 3.5rem;
+    background-color: config.$color-amber-200;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding: 2.8rem 3.5rem 4rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: grid;
+        gap: 9rem;
+        align-items: flex-start;
+        grid-template-columns: 1fr auto;
+    }
+}
+
+.gift-card-overview-1__form-action {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: auto;
+    color: config.$color-emerald-700;
+    text-transform: uppercase;
+
+    @media (min-width: config.$breakpoint-xl) {
+        order: 2;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.2em;
+        }
+    }
+}
+
+.gift-card-overview-1__form-body {
+    @media (min-width: config.$breakpoint-xl) {
+        order: 1;
+    }
+}

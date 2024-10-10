@@ -1,0 +1,68 @@
+@use "../config";
+
+.cta-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+    }
+}
+
+.cta-5__wrapper {
+    display: grid;
+    row-gap: 2.7rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.6rem;
+    }
+}
+
+.cta-5__item {
+    padding: 2.8rem;
+    color: config.$color-white;
+    background-color: config.$color-emerald-500;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding: 4rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding: 7rem;
+    }
+}
+
+.cta-5__item:nth-child(2) {
+    background-color: config.$color-emerald-700;
+}
+
+.cta-5__item-title {
+    margin-bottom: 1.4rem;
+}
+
+.cta-5__item-text {
+    max-width: 50rem;
+}
+
+.cta-5__item-actions {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-top: 4.5rem;
+    }
+}

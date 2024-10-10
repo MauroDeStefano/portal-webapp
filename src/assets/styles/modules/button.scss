@@ -1,0 +1,11 @@
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    font-weight: inherit;
+}
+
+button:enabled {
+    cursor: pointer;
+}

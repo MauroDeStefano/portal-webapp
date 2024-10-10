@@ -1,0 +1,105 @@
+@use "../config";
+
+.drawer-1__overlay {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.drawer-1__drawer {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: config.$color-white;
+    box-shadow: -10px -10px 10px rgba(0, 0, 0, .2);
+
+    @media (min-width: config.$breakpoint-sm) {
+        width: 40rem;
+    }
+}
+
+.drawer-1__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    translate: 0 0.11em;
+
+    &--uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.drawer-1__close-button {
+    cursor: pointer;
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.drawer-1__close-button svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.drawer-1__close-button-floating {
+    position: fixed;
+    right: min(var(--container-padding), 5rem);
+    bottom: min(var(--container-padding), 5rem);
+}
+
+.drawer-1__back-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    translate: 0 0.11em;
+    transition: color 300ms;
+
+    &:hover {
+        color: config.$color-emerald-700;
+    }
+}
+
+.drawer-1__back-button-icon {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    translate: 0 -0.12em;
+}
+
+.drawer-1__back-button-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.drawer-1__back-button-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.drawer-1__header {
+    margin: min(var(--container-padding), 5rem);
+}
+
+.drawer-1__body {
+    margin: min(var(--container-padding), 5rem);
+}
+
+
+.drawer-extra-wide .drawer-1__body {
+    margin: calc(0.5 * min(var(--container-padding), 5rem));
+}

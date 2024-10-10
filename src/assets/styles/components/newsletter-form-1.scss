@@ -1,0 +1,43 @@
+@use "../config";
+
+.newsletter-form-1__state {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.newsletter-form-1__state-icon {
+    color: config.$color-emerald-700;
+}
+
+.newsletter-form-1__state-icon svg {
+    display: block;
+    height: 5.2rem;
+    width: 5.2rem;
+}
+
+.newsletter-form-1__state-label {
+    font-size: 1.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.newsletter-form-1__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 1.3rem;
+    }
+}
+
+.newsletter-form-1__form-submit {
+    margin-top: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 4rem;
+    }
+}

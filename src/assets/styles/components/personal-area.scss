@@ -1,0 +1,42 @@
+@use "../config";
+
+.personal-area {
+    padding-bottom: 3rem;
+    background-color: config.$color-stone-100;
+
+    @media (max-width: config.$breakpoint-sm) {
+        --container-padding: 2.5rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 16rem;
+    }
+}
+
+.personal-area__logo {
+    padding-top: 5rem;
+    padding-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8.6rem;
+        padding-bottom: 8.2rem;
+    }
+}
+
+.personal-area__logo svg {
+    display: block;
+    width: auto;
+    height: 8rem;
+}
+
+.personal-area path {
+    //fill: config.$color-emerald-700;
+}
+
+.personal-area__card-header-spacer {
+    @media (min-width: config.$breakpoint-lg) {
+        height: 1.6rem;
+    }
+}

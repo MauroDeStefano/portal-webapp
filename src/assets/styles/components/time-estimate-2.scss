@@ -1,0 +1,24 @@
+@use "../config";
+
+.time-estimate-2 {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.time-estimate-2__time {
+    opacity: 0.5;
+}
+
+.time-estimate-2 a {
+    opacity: 0.5;
+    transition: opacity 300ms;
+}
+
+.time-estimate-2 a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.2em;
+}

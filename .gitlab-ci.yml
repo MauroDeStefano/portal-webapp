@@ -1,0 +1,72 @@
+variables:
+  ECR_IMAGE: 575911635823.dkr.ecr.eu-west-1.amazonaws.com/website
+
+stages:
+  - build
+  - deploy
+
+default:
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+
+
+build:
+  stage: build
+  only:
+    - staging
+    - production
+    - visup-staging
+  image: docker:dind
+  services:
+    - docker:dind
+  before_script:
+    - apk add --update --no-cache py-pip
+    - apk add --update --no-cache curl
+    - apk add --update --no-cache bash
+    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - pip install awscli --break-system-packages
+    - $(aws ecr get-login --no-include-email --region eu-west-1)
+    - until docker info; do sleep 1; done
+    - cp .secure_files/.env.$CI_COMMIT_BRANCH.sample .env.sample
+    - mkdir public/.well-known
+    - cp .secure_files/apple-developer-merchantid-domain-association public/.well-known/apple-developer-merchantid-domain-association
+  script:
+    - docker build -t website .
+    - docker tag website:latest $ECR_IMAGE:$CI_COMMIT_REF_NAME
+    - docker tag website:latest $ECR_IMAGE:$CI_COMMIT_SHORT_SHA
+    - docker push $ECR_IMAGE:$CI_COMMIT_REF_NAME
+    - docker push $ECR_IMAGE:$CI_COMMIT_SHORT_SHA
+
+
+deploy-staging:
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: [ "" ]
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging" || $CI_COMMIT_BRANCH == "visup-staging"
+      when: on_success
+  needs:
+    - build
+  environment:
+    name: eks/staging
+  script:
+    - kubectl --context friland/k8s-agent:friland-agent -n friland-staging set image deployment/website website=$ECR_IMAGE:$CI_COMMIT_SHORT_SHA
+
+deploy-production:
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: [ "" ]
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "production"
+      when: on_success
+  needs:
+    - build
+  environment:
+    name: eks/production
+  script:
+    - kubectl --context friland/k8s-agent:friland-agent -n friland set image deployment/website website=$ECR_IMAGE:$CI_COMMIT_SHORT_SHA

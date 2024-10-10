@@ -1,0 +1,159 @@
+@use "../config";
+
+.cta-8__header {
+    padding-top: 6.6rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 17rem;
+        padding-bottom: 14rem;
+    }
+}
+
+.cta-8__header-container {
+    --container-width: 84rem;
+}
+
+.cta-8__header-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.cta-8__header-title {
+    margin-bottom: 0;
+}
+
+.cta-8__body {
+    padding-bottom: 3rem;
+
+    @media (min-width: config.$breakpoint-sm) {
+        padding-bottom: 6rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 10rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 16rem;
+    }
+}
+
+.cta-8__item {
+    color: config.$color-white;
+    background-color: config.$color-emerald-500;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.cta-8__item + .cta-8__item {
+    margin-top: 2.8rem;
+}
+
+.cta-8__item:nth-child(2) {
+    background-color: config.$color-emerald-700;
+}
+
+.cta-8__item:nth-child(2) .cta-8__item-image-unit {
+    order: 1;
+}
+
+.cta-8__item:nth-child(2) .cta-8__item-content-unit {
+    order: 2;
+}
+
+.cta-8__item-content {
+    padding: 4rem 3rem 5.4rem;
+    box-sizing: border-box;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding: 8.4rem 8rem 10rem;
+    }
+}
+
+.cta-8__item-title {
+    margin-bottom: 3.8rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 3rem;
+    }
+}
+
+.cta-8__item-text {
+    margin-bottom: 0;
+}
+
+.cta-8__item-spacer {
+    flex: 1;
+}
+
+.cta-8__item-num-nights {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.cta-8__item-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.6rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 3.6rem;
+    }
+}
+
+.cta-8__item-info-link {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.2em;
+    transition: color 300ms;
+}
+
+.cta-8__item-image-unit {
+    display: none;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 90%;
+        box-sizing: border-box;
+        height: 100%;
+    }
+}
+
+.cta-8__item-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}

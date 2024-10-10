@@ -1,0 +1,64 @@
+@use "../config";
+
+.feature-section-7 {
+    --icon-size: 5.2rem;
+
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 14.5rem;
+        padding-bottom: 19rem;
+    }
+}
+
+.feature-section-7__title {
+    text-align: center;
+    margin-bottom: 4.7rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 11rem;
+    }
+}
+
+.feature-section-7__feature-item {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 3.7rem;
+        padding-bottom: 4.8rem;
+    }
+}
+
+.feature-section-7__feature-icon {
+    display: block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.feature-section-7__feature-line {
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--icon-size) / 2);
+    width: 0.1rem;
+    height: calc(100% - var(--icon-size));
+    background-color: currentColor;
+}
+
+.feature-section-7__feature-item:last-child .feature-section-7__feature-line {
+    display: none;
+}
+
+.feature-section-7__feature-text {
+    margin-top: 1rem;
+    max-width: 90rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}

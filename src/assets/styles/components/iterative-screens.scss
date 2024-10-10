@@ -1,0 +1,115 @@
+@use "../config";
+
+.iterative-screens {
+    @media (max-width: config.$breakpoint-sm) {
+        --container-padding: 2.5rem;
+    }
+}
+
+.iterative-screens__header {
+    --container-width: 156rem;
+    border-bottom: 0.1rem solid config.$color-gray-300;
+}
+
+.iterative-screens__header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    height: 9rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        height: 12rem;
+    }
+}
+
+.iterative-screens__header-logo-img {
+    display: block;
+    width: auto;
+    height: 1.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        height: 2rem;
+    }
+}
+
+.iterative-screens__header-action--right {
+    margin-left: auto;
+}
+
+.iterative-screens__header-action {
+    font-size: 1.3rem;
+    color: config.$color-gray-800;
+    transition: color 200ms;
+    translate: 0 0.15em;
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.2em;
+        }
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.4rem;
+    }
+}
+
+.iterative-screens__body {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: config.$color-gray-100;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+}
+
+.iterative-screens__footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 0.1rem solid config.$color-gray-300;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.iterative-screens__footer-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    color: config.$color-gray-400;
+
+    @media (min-width: config.$breakpoint-md) {
+        column-gap: 3rem;
+        justify-content: center;
+    }
+}
+
+.iterative-screens__footer-nav-link {
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.2em;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use "../config";
+
+.order-complete-1__payment {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: config.$breakpoint-xl) {
+        flex-direction: row;
+        gap: 16rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.order-complete-1__separator {
+    margin: 2.5rem 0;
+    border-bottom: 1px solid currentColor;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: none;
+    }
+}
+
+.order-complete-1__continue {
+    margin-top: 2.7rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<circle cx="14" cy="14" r="6" style="fill:currentColor;"/>
+<path d="M14,2c-6.583,0 -11.999,5.417 -11.999,12c-0,3.181 1.265,6.235 3.514,8.485c2.255,2.292 5.339,3.584 8.554,3.584c6.583,0 12,-5.417 12,-12c0,-3.215 -1.292,-6.299 -3.584,-8.554c-2.244,-2.257 -5.302,-3.524 -8.485,-3.515m0,-2c7.68,-0 14,6.32 14,14c0,7.68 -6.32,14 -14,14c-7.68,0 -14,-6.32 -14,-14c-0,-7.68 6.32,-14 14,-14Z" style="fill:currentColor;fill-rule:nonzero;"/>
+</svg>

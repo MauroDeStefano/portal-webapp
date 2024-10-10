@@ -1,0 +1,31 @@
+@use "../config";
+
+.description-list-2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.description-list-2__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.description-list-2__text {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+
+    &--gray {
+        color: config.$color-gray-400;
+    }
+}

@@ -1,0 +1,117 @@
+@use "../config";
+
+.faq-1__copy-unit {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        text-align: left;
+        padding-top: 10rem;
+        padding-bottom: 9rem;
+    }
+}
+
+.faq-1__copy-wrapper {
+    @media (min-width: config.$breakpoint-md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.faq-1__copy-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.faq-1__copy-button {
+    display: none;
+
+    @media (min-width: config.$breakpoint-md) {
+        display: block;
+    }
+}
+
+.faq-1__accordions-unit {
+    --accordion-padding: 4rem;
+    --accordion-border-color: #{config.$color-gray-300};
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 13rem;
+    }
+}
+
+.faq-1__accordions-unit-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+}
+
+.faq-1__accordions-unit-wrapper {
+    border-bottom: 0.1rem solid var(--accordion-border-color);
+}
+
+.faq-1__accordion {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    border-top: 0.1rem solid var(--accordion-border-color);
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.faq-1__accordion-title {
+    margin-bottom: 0;
+}
+
+.faq-1__accordion-button {
+    padding-top: var(--accordion-padding);
+    padding-bottom: var(--accordion-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    text-align: left;
+    line-height: inherit;
+
+    &[aria-expanded="true"] .faq-1__accordion-button-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.faq-1__accordion-button-icon {
+    width: auto;
+    height: 0.9rem;
+    transition: transform 300ms;
+}
+
+.faq-1__accordion-content-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+
+    &[aria-hidden="false"] {
+        grid-template-rows: 1fr;
+    }
+}
+
+.faq-1__accordion-content-wrapper {
+    overflow: hidden;
+}
+
+.faq-1__accordion-content {
+    padding-bottom: var(--accordion-padding);
+}

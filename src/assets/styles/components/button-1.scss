@@ -1,0 +1,71 @@
+@use "../config";
+
+.button-1 {
+    --border-color: tranparent;
+    position: relative;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 5.2rem;
+    padding-left: 2.6rem;
+    padding-right: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 20rem;
+    height: 5.2rem;
+    text-align: left;
+    background-color: config.$color-white;
+
+    &:not(:disabled) {
+        :hover .button-1__icon-circle,
+        :focus-within .button-1__icon-circle {
+        transform: scale(1.0834);
+        }
+        .button-1__icon-circle {
+            background-color: config.$color-emerald-700;
+        }
+    }
+
+    &--border {
+        box-shadow: 0 0 0 0.1rem config.$color-gray-300;
+    }
+
+    &--shadow {
+        box-shadow: 0 0.3rem 0.6rem hsla(0, 0%, 0%, 0.38);
+    }
+}
+
+.button-1__label {
+    flex: 1;
+    font-size: 1.4rem;
+    translate: 0 0.08em;
+    color: config.$color-gray-800;
+}
+
+.button-1__icon {
+    position: relative;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: config.$color-white;
+    isolation: isolate;
+}
+
+.button-1__icon-circle {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: transform 300ms;
+    background-color: config.$color-emerald-disabled;
+}
+
+.button-1__icon svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}

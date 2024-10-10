@@ -1,0 +1,57 @@
+@use "../config";
+
+.register__header {
+    @media (min-width: config.$breakpoint-sm) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.register__close-mobile {
+    @media (min-width: config.$breakpoint-sm) {
+        display: none;
+    }
+}
+
+.register__close-desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-sm) {
+        display: block;
+    }
+}
+
+.register__form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.register__form-description {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-style: italic;
+    translate: 0 0.11em;
+}
+
+.register__form-errors {
+    color: config.$color-red-600;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.register__form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.register__form-action {
+    border-top: 0.1rem solid config.$color-gray-300;
+    padding: 3rem 0;
+}

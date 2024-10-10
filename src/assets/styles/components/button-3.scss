@@ -1,0 +1,27 @@
+@use "../config";
+
+.button-3 {
+    border-radius: 4rem;
+    padding: 1.2rem 1.8rem 1.2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+    width: max-content;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+}
+
+.button-3__label {
+    padding-top: 0.2em;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button-3__icon svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}

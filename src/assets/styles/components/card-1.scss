@@ -1,0 +1,348 @@
+@use "../config";
+
+.card-1 {
+    padding: 2.8rem;
+    background-color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding: 5rem;
+    }
+
+    &--green {
+        color: config.$color-white;
+        background-color: config.$color-emerald-700;
+    }
+
+    &--red {
+        color: config.$color-white;
+        background-color: hsl(0 60% 42% / 1);
+    }
+}
+
+.card-1 + .card-1 {
+    margin-top: 2.8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3.2rem;
+    }
+}
+
+.card-1__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.card-1__header-action-link {
+    font-weight: 600;
+    color: config.$color-emerald-700;
+    text-transform: uppercase;
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.2em;
+        }
+    }
+}
+
+.card-1__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.card-1__price-accordion-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+.card-1__price-accordion-alert-icon svg {
+    display: block;
+    height: 3rem;
+    width: auto;
+}
+
+.card-1__price-accordion-title {
+    translate: 0 0.15em;
+}
+
+.card-1__price-accordion-icon {
+    margin-left: auto;
+    transition: transform 300ms;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: initial;
+    }
+}
+
+.card-1__price-accordion-trigger[aria-expanded="true"] .card-1__price-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.card-1__price-accordion-icon svg {
+    display: block;
+    height: 1rem;
+    width: auto;
+}
+
+.card-1__price-accordion-price-wrapper {
+    display: none;
+    transition: opacity 300ms;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+.card-1__price-accordion-price {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.card-1__price-accordion-description {
+    font-size: 1.4rem;
+    color: config.$color-stone-500;
+}
+
+.card-1__price-accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+
+    &[aria-hidden="false"] {
+        grid-template-rows: 1fr;
+    }
+}
+
+.card-1__price-accordion-content-container {
+    overflow: hidden;
+}
+
+.card-1__price-accordion-content-wrapper {
+    margin-top: 2.2rem;
+}
+
+.card-1__accordion-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.8rem;
+}
+
+.card-1__price-accordion-title {
+    translate: 0 0.15em;
+}
+
+.card-1__accordion-icon {
+    margin-left: auto;
+    transition: transform 300ms;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: initial;
+    }
+}
+
+.card-1__accordion-trigger[aria-expanded="true"] .card-1__accordion-icon {
+    transform: rotate(180deg);
+}
+
+.card-1__price-accordion--hide-price-when-expanded
+.card-1__price-accordion-trigger[aria-expanded="true"]
+.card-1__price-accordion-price-wrapper {
+    opacity: 0;
+}
+
+.card-1__accordion-icon svg {
+    display: block;
+    height: 1rem;
+    width: auto;
+}
+
+.card-1__accordion-content-container {
+    overflow: hidden;
+    height: 0;
+}
+
+.card-1__accordion-content[aria-hidden="false"] .card-1__accordion-content-container {
+    overflow: visible;
+    height: auto;
+}
+
+.card-1__accordion-content-wrapper {
+    padding-top: 2.2rem;
+}
+
+.card-1__gift-card-accordion-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.8rem;
+}
+
+.card-1__gift-card-accordion-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &--active {
+        color: config.$color-emerald-700;
+    }
+
+    &--expired {
+        color: config.$color-red-600;
+    }
+}
+
+.card-1__gift-card-accordion-status-icon svg {
+    display: block;
+    width: auto;
+    height: 1rem;
+}
+
+.card-1__gift-card-accordion-status-label {
+    font-size: 1.4rem;
+    translate: 0 0.15em;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 1.8rem;
+    }
+}
+
+.card-1__gift-card-accordion-icon {
+    margin-left: auto;
+    transition: transform 300ms;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-left: initial;
+    }
+}
+
+.card-1__gift-card-accordion-trigger[aria-expanded="true"]
+.card-1__gift-card-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.card-1__gift-card-accordion-icon svg {
+    display: block;
+    height: 1rem;
+    width: auto;
+}
+
+.card-1__gift-card-accordion-content-container {
+    overflow: hidden;
+    height: 0;
+}
+
+.card-1__gift-card-accordion-content[aria-hidden="false"]
+.card-1__gift-card-accordion-content-container {
+    overflow: visible;
+    height: auto;
+}
+
+.card-1__gift-card-accordion-content-wrapper {
+    padding-top: 2.2rem;
+}
+
+.card-1__gift-card-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 4rem;
+    }
+}
+
+.card-1__gift-card-header-content {
+    margin-bottom: 1rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.card-1__gift-card-header-title {
+    margin-bottom: 1rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 0;
+    }
+}
+
+.card-1__gift-card-header-description {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+    margin-bottom: 0;
+}
+
+.card-1__gift-card-header-num-nights {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+}
+
+.card-1__gift-card-header-delete {
+    &--desktop {
+        display: none;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        &--desktop {
+            display: block;
+        }
+
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+.card-1__gift-card-header-cell:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.card-1__gift-card-header-delete {
+    transition: color 300ms;
+
+    @media (hover: hover) {
+        &:hover {
+            color: config.$color-emerald-700;
+        }
+    }
+}
+
+.card-1__gift-card-header-delete svg {
+    display: block;
+    width: auto;
+    height: 2rem;
+}
+
+.card-1__gift-card-header-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    translate: 0 0.15em;
+}

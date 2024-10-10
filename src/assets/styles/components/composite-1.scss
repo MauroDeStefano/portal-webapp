@@ -1,0 +1,242 @@
+@use "../config";
+
+.composite-1 {
+    --simulate-container: max(
+        var(--container-padding),
+        calc(50vw - (var(--container-width) / 2) + var(--container-padding))
+    );
+}
+
+.composite-1__hero {
+    --hero-height: max(65vh, 40rem);
+
+    position: relative;
+    width: 100%;
+    height: var(--hero-height);
+    isolation: isolate;
+    background-color: config.$color-black;
+
+    @media (min-width: config.$breakpoint-xl) {
+        --hero-height: max(80vh, 65rem);
+    }
+}
+
+.composite-1__hero-carousel {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.composite-1__hero-slide {
+    position: relative;
+    width: 100%;
+    height: var(--hero-height);
+}
+
+.composite-1__hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.composite-1__hero-dots-wrapper {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-xl) {
+        width: 50%;
+    }
+}
+
+.composite-1__group {
+    @media (min-width: config.$breakpoint-xl) {
+        display: flex;
+    }
+}
+
+.composite-1__cta-1 {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 12.5rem;
+        padding-bottom: 14rem;
+        padding-left: min(15.4rem, var(--simulate-container));
+        padding-right: var(--simulate-container);
+        box-sizing: border-box;
+        width: 50%;
+        margin-top: -25rem;
+        order: 2;
+    }
+}
+
+.composite-1__cta-1-unit-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.composite-1__cta-1-container {
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.composite-1__cta-1-wrapper {
+    max-width: 70rem;
+}
+
+.composite-1__cta-1-button-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-top: 5rem;
+}
+
+.composite-1__features {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 14rem;
+        padding-bottom: 15.4rem;
+        padding-left: var(--simulate-container);
+        padding-right: min(15.4rem, var(--simulate-container));
+        box-sizing: border-box;
+        width: 50%;
+        order: 1;
+    }
+}
+
+.composite-1__features-container {
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.composite-1__features-wrapper {
+    --col-num: 1;
+    --row-gap: 1.4rem;
+    --col-gap: 6rem;
+
+    display: grid;
+    grid-template-columns: repeat(var(--col-num), 1fr);
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+    max-width: 70rem;
+
+    @media (min-width: config.$breakpoint-sm) {
+        --col-num: 2;
+        --row-gap: 2.6rem;
+    }
+}
+
+.composite-1__feature-item {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.composite-1__feature-item-icon svg {
+    display: block;
+    width: auto;
+    height: 1rem;
+    color: config.$color-emerald-700;
+}
+
+.composite-1__feature-item-text {
+    font-size: 1.3rem;
+    color: config.$color-emerald-700;
+    translate: 0 -0.3em;
+    margin-bottom: 0;
+}
+
+.composite-1__cta-2 {
+    position: relative;
+
+    @media (min-width: config.$breakpoint-xl) {
+        display: flex;
+    }
+}
+
+.composite-1__cta-2-container {
+    padding-left: var(--simulate-container);
+    padding-right: min(12rem, var(--simulate-container));
+}
+
+.composite-1__cta-2-content {
+    padding-bottom: 5.4rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-top: -3rem;
+        padding-bottom: 13rem;
+        width: 50%;
+    }
+}
+
+.composite-1__cta-2-wrapper {
+    max-width: 70rem;
+}
+
+.composite-1__cta-2-image-unit {
+    @media (min-width: config.$breakpoint-xl) {
+        width: 50%;
+    }
+}
+
+.composite-1__cta-2-image-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 87%;
+    height: 100%;
+    box-sizing: border-box;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-bottom: 66%;
+    }
+}
+
+.composite-1__cta-2-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 500ms;
+}
+
+@media (hover: hover) {
+    .composite-1__cta-2:hover .composite-1__cta-2-image {
+        transform: scale(1.05);
+    }
+}
+
+.composite-1__cta-2-button-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-top: 5rem;
+}
+
+.composite-1__cta-2-unit-link {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}

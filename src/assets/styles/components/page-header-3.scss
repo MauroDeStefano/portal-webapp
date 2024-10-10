@@ -1,0 +1,61 @@
+@use "../config";
+
+.page-header-3 {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8.6rem;
+        padding-bottom: 9.8rem;
+    }
+}
+
+.page-header-3__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-bottom: 7.6rem;
+    }
+}
+
+.page-header-3__logo path {
+    fill: config.$color-emerald-700;
+}
+
+.page-header-3__logo svg {
+    display: block;
+    width: auto;
+    height: 8rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        height: 9.6rem;
+    }
+}
+
+.page-header-3__book {
+    position: fixed;
+    z-index: 1;
+    top: 17.5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.page-header-3__title {
+    color: config.$color-emerald-700;
+    text-transform: uppercase;
+    max-width: 70rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}

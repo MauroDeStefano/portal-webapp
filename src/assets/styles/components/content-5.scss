@@ -1,0 +1,90 @@
+@use "../config";
+
+.content-5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-top: 13rem;
+        margin-bottom: 13rem;
+    }
+}
+
+.content-5__container {
+    --container-width: 117rem;
+}
+
+.content-5__wrapper {
+    font-size: 1.8rem;
+    line-height: 2;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.content-5__wrapper p {
+    margin-bottom: 2em;
+}
+
+.content-5__wrapper .heading {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-top: 2.2em;
+        margin-bottom: 2.2em;
+    }
+}
+
+.content-5__wrapper blockquote {
+    position: relative;
+    padding: 4rem 0;
+    margin: 5rem 0;
+    max-width: 70rem;
+    font-size: 2.8rem;
+    line-height: 1.3;
+    font-family: config.$font-secondary;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: 0.1rem;
+        width: 36%;
+        min-width: 14.4rem;
+        background-color: currentColor;
+        opacity: 0.5;
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    &::after {
+        left: 0;
+        bottom: 0;
+    }
+
+    p {
+        margin-bottom: 3rem;
+    }
+
+    cite {
+        font-family: config.$font-primary;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}

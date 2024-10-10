@@ -1,0 +1,21 @@
+@use "../config";
+
+.background-decorator-2 {
+    position: relative;
+    background-color: config.$color-amber-50;
+}
+
+.background-decorator-2__background-image {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+}

@@ -1,0 +1,89 @@
+@use "../config";
+
+.payment-confirmation-1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.payment-confirmation-1__item {
+    position: relative;
+    padding-bottom: 3.8rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 5.8rem;
+    }
+}
+
+.payment-confirmation-1__item:last-child {
+    padding-bottom: 0;
+}
+
+.payment-confirmation-1__item-line {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    top: 2.4rem;
+    bottom: 0;
+    left: 2.5rem;
+    background-color: currentColor;
+}
+
+.payment-confirmation-1__item:first-child .payment-confirmation-1__item-line {
+    top: 5.2rem;
+}
+
+.payment-confirmation-1__item:last-child .payment-confirmation-1__item-line {
+    display: none;
+}
+
+.payment-confirmation-1__item-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.payment-confirmation-1__item-icon svg {
+    display: block;
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+.payment-confirmation-1__item-circle {
+    position: absolute;
+    top: 0;
+    left: 1.35rem;
+    border: 0.3rem solid currentColor;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.payment-confirmation-1__item-content {
+    padding-left: 7rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-left: 9rem;
+    }
+}
+
+.payment-confirmation-1__item-title {
+    margin-bottom: 0.5rem;
+}
+
+.payment-confirmation-1__item:first-child {
+    padding-bottom: 7.7rem;
+}
+
+.payment-confirmation-1__item:first-child .payment-confirmation-1__item-label {
+    font-size: 1.8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.payment-confirmation-1__item-label {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}

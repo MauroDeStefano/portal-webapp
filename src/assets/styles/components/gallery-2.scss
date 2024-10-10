@@ -1,0 +1,52 @@
+@use "../config";
+
+.gallery-2 {
+    position: relative;
+
+    @media (min-width: config.$breakpoint-md) {
+        content: "embla-destroy";
+    }
+}
+
+.gallery-2__carousel-container {
+    margin-left: -1.3rem;
+
+
+    @media (min-width: config.$breakpoint-md) {
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+        > * {
+            flex: 0 0 25%;
+            padding-left: 1.3rem;
+        }
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        //grid-template-columns: repeat(4, 1fr);
+        > * {
+            flex: 0 0 25%;
+            padding-left: 1.3rem;
+        }
+    }
+}
+
+.gallery-2__carousel-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery-2__carousel-dots-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3.3rem;
+    display: flex;
+    justify-content: center;
+    color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-md) {
+        //display: none;
+    }
+}

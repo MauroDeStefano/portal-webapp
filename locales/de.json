@@ -1,0 +1,1084 @@
+{
+  "AboutUs": {
+    "_meta": {
+      "description": "Förderung eines authentischen und verantwortungsbewussten Kontakts mit dem Territorium, im Zeichen von Entspannung und Wohlbefinden. Entdecken Sie die Mission von Friland.",
+      "title": "Warum Friland? Unsere Geschichte und unser Ziel"
+    },
+    "features": {
+      "items": {
+        "1": {
+          "title": "Energieeinsparung* für Heizung und Beleuchtung."
+        },
+        "2": {
+          "title": "Wassereinsparung* für Sanitäranlagen und Küche"
+        },
+        "3": {
+          "title": "Grüne Energie, erzeugt durch Solarpaneele"
+        },
+        "4": {
+          "title": "Holz. Das Material, aus dem unsere Räume gemacht sind"
+        },
+        "5": {
+          "title": "Wir verwenden nur lokale und regionale Produkte"
+        },
+        "6": {
+          "title": "Bodenverbrauch unserer Räume"
+        }
+      },
+      "subtitle": "Unser Einfluss",
+      "tip": "Im Vergleich zum durchschnittlichen täglichen Verbrauch eines Hotelaufenthalts (Quelle: Assoturismo)",
+      "title": "Wir engagieren uns für eine <important>positive Auswirkung</important>."
+    },
+    "ourCommitment": {
+      "items": {
+        "item1": {
+          "content": "Unsere Räume sind offgrid, d.h. sie sind nicht vom Wasser- oder Abwassernetz abhängig und hinterlassen daher keinen ökologischen Fußabdruck. Dies ermöglicht es uns, die umliegende Umwelt zu respektieren, den Ressourcenverbrauch zu vermeiden und die Auswirkungen auf das Gebiet gering zu halten.",
+          "title": "Kein Bodenverbrauch"
+        },
+        "item2": {
+          "content": "In unseren Räumen wird der Strom durch Solarpaneele bereitgestellt, die eine nachhaltige Energieversorgung für unsere Gäste gewährleisten. Was das Wassersystem betrifft, so verwenden wir ein internes Zisternensystem. Wir verpflichten uns, energieeffiziente Geräte zu installieren, die alle Bedürfnisse unserer Kunden erfüllen und gleichzeitig einen geringen ökologischen Fußabdruck hinterlassen.",
+          "title": "Erneuerbare Energie"
+        },
+        "item3": {
+          "content": "In unseren Räumen fördern wir den verantwortungsvollen und achtsamen Umgang mit Ressourcen. Zu diesem Zweck haben wir ein Display installiert, das unseren Gästen einen Echtzeit-Schnappschuss ihrer Umweltauswirkungen bietet. Dieses Tool liefert Informationen über den Wasser- und Stromverbrauch sowie die Photovoltaikproduktion und ermöglicht es den Gästen, ihren Energieverbrauch genau zu überwachen.",
+          "title": "Verbrauchsüberwachung"
+        }
+      },
+      "subtitle": "Unser Engagement",
+      "title": "Wir fördern eine <important>Kultur</important> des Respekts und des Bewusstseins ..."
+    },
+    "ourStory": {
+      "items": {
+        "item1": {
+          "content": "Friland wurde gegründet, um einen neuen und verantwortungsbewussten Kontakt mit dem Territorium zu fördern, durch eine einzigartige Gelegenheit, in Symbiose mit der Natur zu leben. Mit Friland möchten wir einen temporären Lebensstil fördern. Unser Projekt verkörpert die Idee der Reversibilität und ermöglicht es den Menschen, in die Natur einzutauchen und eine Alternative zum Bodenverbrauch zu bieten. Das Land ist kein 'Recht' des Menschen, sondern ein Privileg, das respektiert werden muss.",
+          "title": "Wie das Projekt entstand"
+        },
+        "item2": {
+          "content": "Die Friland-Unterkünfte sind so konzipiert, dass sie minimale Auswirkungen auf die Umwelt haben, ohne auf Komfort zu verzichten. Sie sind mit einem bequemen Bett, einer voll ausgestatteten Küche und einem minimalen, aber komfortablen Badezimmer ausgestattet. Die Räume verfügen über IoT-Technologie: Wir erhalten ständig Daten über den Wasserverbrauch und die Energieerzeugung der Photovoltaikanlagen, um den Gästen ein optimales Erlebnis zu bieten und die verfügbaren Ressourcen zu optimieren.",
+          "title": "Das Zimmer"
+        },
+        "item3": {
+          "content": "Friland wird von erfahrenen und geschulten Partnern unterstützt, die uns bei der Verwaltung der Räume helfen, um Ihnen den bestmöglichen Service zu bieten.",
+          "title": "Unsere Partner"
+        },
+        "item4": {
+          "content": "Das Friland-Team besteht aus jungen Leuten, die voller Wachstums- und Verbesserungswillen sind. Alle kommen aus unterschiedlichen Hintergründen, das Team ergänzt sich und unterstützt sich gegenseitig in der täglichen Arbeit, in einer Atmosphäre des Teilens und des Wohlbefindens. Wir alle haben das gleiche Ziel: Friland leben und wachsen zu lassen.",
+          "title": "Das Team"
+        }
+      }
+    },
+    "quotes": {
+      "items": {
+        "item1": {
+          "content": "Friland ist <important>Leidenschaft für unser Territorium</important>, das wir bewohnen, aber oft nicht kennen."
+        },
+        "item2": {
+          "content": "Friland ist ein <important>Eintauchen in die Natur</important>, um die richtige <important>Zeit</important> und den richtigen Raum im <important>Respekt</important> vor der Umwelt zu finden. Um den Geist mit dem Körper zu versöhnen und den Geist zu regenerieren"
+        },
+        "item3": {
+          "content": "Wir wollen die Kultur des langsamen Reisens fördern, das keine Spuren hinterlässt, weil wir überzeugt sind, dass eine reversible Lebensweise des Territoriums möglich ist. Wir möchten Träger authentischer und bewusster Erlebnisse sein, die die Sinne schärfen und Wohlbefinden schaffen. Wir möchten den Worten Stille, Regen, Nacht wieder Bedeutung verleihen."
+        },
+        "item4": {
+          "content": "Friland ist die Gelegenheit, sich von der Hektik des Alltags zu lösen und sich wieder mit uns selbst und der Natur zu verbinden. Es ist ein nomadisches, ökologisches, autarkes und ungewöhnliches Zimmer, um echte, einzigartige Emotionen wiederzufinden, die wir oft vergessen."
+        },
+        "item5": {
+          "content": "<important>Ihr Zimmer in der Natur.</important>"
+        }
+      }
+    }
+  },
+  "Access": {
+    "label": "Passwort ändern",
+    "text": "Auf <important>dieser Seite</important> können Sie eine Kopie anfordern oder Ihre Informationen löschen.",
+    "title": "Zugang"
+  },
+  "Account": {
+    "my_bookings": "Meine Buchungen",
+    "my_gift_cards": "Meine Geschenkkarten",
+    "my_newsletter": "Newsletter-Abonnementstatus",
+    "my_profile": "Mein Profil"
+  },
+  "AdvBoxes": {
+    "collaborate": {
+      "label": "Schreiben Sie uns",
+      "title": "Arbeiten Sie mit Friland zusammen"
+    },
+    "gift-card": {
+      "label": "Wählen Sie die Geschenkkarte",
+      "title": "Noch unentschlossen, wohin Sie gehen möchten? <br />Verschenken Sie eine Geschenkkarte"
+    },
+    "partners": {
+      "label": "Erfahren Sie mehr",
+      "title": "Werden Sie Partner"
+    },
+    "smartworking": {
+      "label": "Friland für Unternehmen",
+      "title": "Nicht nur Homeoffice"
+    }
+  },
+  "BestDestinations": {
+    "subtitle": "Das Beste unserer <important>Reiseziele</important>",
+    "title": "Wählen Sie Ihren nächsten Aufenthalt"
+  },
+  "NatureRetreat": {
+    "text_one": "Entdecken Sie die Welt von Friland, wo Natur und Komfort sich vereinen, um Ihnen einen besonderen Aufenthalt zu bieten. Unsere Tiny Houses, in spektakulären Naturumgebungen gelegen, ermöglichen es Ihnen, in atemberaubende Landschaften einzutauchen und Momente purer Entspannung zu genießen, weit entfernt von Stress und der täglichen Routine.",
+    "text_two": "Es spielt keine Rolle, ob Sie ein Abenteuerlustiger sind, der nach Routen und Pfaden in der Natur sucht, oder ob Sie einfach nur einen Rückzugsort suchen, um sich in einer ruhigen Umgebung und abseits des täglichen Stresses zu entspannen. Mit einem Friland Nature Room können Sie alles haben: Abenteuer und Entdeckung sind zum Greifen nah, ebenso wie der Frieden und der Komfort eines maßgeschneiderten Rückzugsortes für Sie."
+  },
+  "Blog": {
+    "back_to_blog_home": "Zurück zur Startseite unseres Blogs",
+    "read_the_article": "Artikel lesen",
+    "reading_time": "Lesezeit: {value} Minuten",
+    "related_articles": "Ähnliche Artikel"
+  },
+  "BookNow": {
+    "book_now_cta": "Jetzt buchen"
+  },
+  "Calendar": {
+    "date_not_available": "Dieses Datum ist bereits reserviert",
+    "date_not_available_for_check_in": "Nicht verfügbar als Check-in-Datum",
+    "date_not_available_for_check_in_and_out": "Nicht verfügbar als Check-in- oder Check-out-Datum",
+    "date_not_available_for_check_out": "Nicht verfügbar als Check-out-Datum",
+    "gift_card_not_available": "Sie können die Geschenkkarte an diesem Datum nicht verwenden",
+    "gift_card_warning": "Es scheint, dass Sie eine Geschenkkarte verwenden. Einige Tage könnten nicht verfügbar sein."
+  },
+  "Checkout": {
+    "confirmation": {
+      "content": "Wir haben Ihre Buchung Nr. {order_id} erhalten.",
+      "continue": "Weiter erkunden",
+      "next_steps": {
+        "one": "Sie erhalten eine E-Mail mit den Buchungsdetails und Anweisungen zur Vervollständigung des Erlebnisses",
+        "two": "Einige Tage vor dem Check-in erhalten Sie einen Leitfaden, der Ihnen hilft, die Gegend bestmöglich zu erkunden und alle Kontakte für den Notfall"
+      },
+      "next_steps_giftcard": {
+        "one": "Sie erhalten eine E-Mail mit der Bestätigung des Kaufs der Geschenkkarte und einigen nützlichen Informationen zur Verwendung.",
+        "two": "Falls Sie darum gebeten haben, es als Geschenk zu versenden, wird die E-Mail auch an den Empfänger mit den Informationen zur Verwendung gesendet.",
+        "three": "Bei der Buchung nach dem Einloggen mit der E-Mail, mit der Sie die Geschenkkarte gekauft/verschenkt haben, werden die Nächte abgezogen."
+      },
+      "summary_title": "Ihre Bestellung",
+      "support": {
+        "cta": {
+          "contact": "Kontaktieren Sie unseren Kundenservice",
+          "faq": "Werfen Sie einen Blick in unseren FAQ-Bereich"
+        },
+        "text": "Sehen Sie sich unsere FAQ an. Wenn Sie nicht finden, was Sie suchen, oder Ihr Problem nicht lösen können, schreiben Sie unserem Kundenservice",
+        "title": "Brauchen Sie Hilfe?"
+      },
+      "title": "Vielen Dank, dass Sie bei uns gebucht haben"
+    },
+    "error": {
+      "content": "The reservation process failed with status: {status}. Please try again later or contact our customer service.",
+      "title": "Error during reservation",
+      "error_code": {
+        "cancelled": "cancelled",
+        "processing": "processing",
+        "requires_action": "requires_action",
+        "requires_capture": "requires_capture",
+        "requires_confirmation": "requires_confirmation",
+        "requires_payment_method": "requires_payment_method",
+        "succeeded": ""
+      }
+    },
+    "date_from": "Von",
+    "date_to": "Bis",
+    "gift": {
+      "delivery": {
+        "email": {
+          "title": "Ich möchte die Geschenkkarte jemandem überlassen"
+        },
+        "myself": {
+          "title": "Ich kaufe die Geschenkkarte für mich selbst"
+        },
+        "print": {
+          "description": "Sie erhalten eine E-Mail mit dem Code, um die Geschenkkarte zum Verschenken auszudrucken",
+          "title": "Ich möchte die Geschenkkarte ausdrucken"
+        }
+      }
+    },
+    "guests_label": "Gäste",
+    "how_many_nights": "{night_count} Nächte",
+    "login_cta": "Haben Sie schon ein Konto? Einloggen!",
+    "pay_cta": "Zum Bezahlen",
+    "payment_form": {
+      "fields": {
+        "data_request": "Die Daten der Gäste werden einige Tage vor dem Check-in per E-Mail angefordert.",
+        "email": "E-Mail",
+        "i_need_invoice": "Ich benötige eine Rechnung",
+        "name": "Name",
+        "phone": "Handy",
+        "subscribe_to_newsletter": "Ich abonniere den Newsletter",
+        "surname": "Nachname"
+      },
+      "implicit_privacy_agreement": "Mit dem Klicken auf die Schaltfläche erklären Sie, dass Sie die Allgemeinen Geschäftsbedingungen und die Datenschutzrichtlinie gelesen und akzeptiert haben.",
+      "subtitle": "Alle Informationen sind sicher und verschlüsselt. Die mit * markierten Felder sind Pflichtfelder.",
+      "title": "Zahlungsinformationen"
+    },
+    "payment_zero": {
+      "content": "Sie haben sich entschieden, den gesamten Betrag der Buchung jetzt zu bezahlen. Klicken Sie auf die Schaltfläche unten, um die Zahlung abzuschließen und die Buchung zu bestätigen.",
+      "title": "Buchung abschließen"
+    },
+    "price_summary": {
+      "discount": "Rabatt",
+      "gift_card": "Geschenkkarte",
+      "subtotal": "Zwischensumme",
+      "taxes": "Inklusive Steuern: {taxes}",
+      "tempnotes": "Wenn Sie vor dem 17.06. eine Geschenkkarte mit einem Code gekauft haben, müssen Sie an hello@fri.land schreiben, um sie zu verwenden.",
+      "total": "Sie werden zahlen"
+    },
+    "step_back_detailed": {
+      "destinations": "Zurück zu den Zielen",
+      "gift_card": "Zurück zur Geschenkkarte",
+      "payment": "Zurück zur Zahlung",
+      "review": "Zurück zur Bestellübersicht",
+      "summary": "Zurück zur Zusammenfassung",
+      "user-details": "Zurück zu den Benutzerdetails"
+    },
+    "step_button_back": "Zurück",
+    "step_button_nav": {
+      "payment": "Bestätigen und bezahlen",
+      "review": "Weiter: Bestellübersicht",
+      "user-details": "Weiter: Benutzerdetails"
+    },
+    "step_titles": {
+      "confirmation": "Ihre Bestellung wurde bestätigt",
+      "payment": "Bezahlung",
+      "summary": "Überblick",
+      "user-details": "Benutzerdetails"
+    },
+    "upsell_heading": "Möchten Sie etwas zu Ihrem Aufenthalt hinzufügen?",
+    "valid_until": "Gültig ein Jahr ab Kaufdatum",
+    "with_pet": "Ich bringe meinen Hund mit",
+    "with_pet_disclaimer": "Ihr Hund oder Ihre Katze ist bei Friland willkommen. Wir bitten nur um einen kleinen Beitrag zur Reinigung des Zimmers für die nächsten Gäste."
+  },
+  "CompaniesServices": {
+    "OurCustomers": {
+      "subtitle": "UNSERE KUNDEN",
+      "title": "Sie sind bereits Frilander geworden:"
+    },
+    "_meta": {
+      "description": "",
+      "title": "Dienstleistungen für Unternehmen"
+    },
+    "cta2Box": {
+      "label": "Erzähl mir mehr",
+      "text": "Aktivitäten und Werkzeuge zur inneren Erforschung (für die Einzelperson und/oder das Team) und äußeren (das Territorium als Leinwand, um sich selbst zu bauen und zu fördern)",
+      "title": "Eine <important>Wachstums</important>erfahrung für Einzelpersonen, Unternehmen und Territorien"
+    },
+    "ctaBox": {
+      "label": "Erzähl mir mehr",
+      "text": "Ermöglichen Sie Ihren Mitarbeitern, einige Tage in der Natur zu verbringen, um mit größerer Konzentration zu arbeiten, die Kreativität und das allgemeine psychische und physische Wohlbefinden zu verbessern. Aber ein Friland-Erlebnis ist viel mehr als das.",
+      "title": "<important>Viel mehr</important> als nur Homeoffice"
+    },
+    "features": {
+      "1": "Inspirierende Orte",
+      "2": "Führer zur Entdeckung des Gebiets",
+      "3": "Eintauchen in die Natur",
+      "4": "Kreativwerkstatt",
+      "5": "Produktivitätssteigerung",
+      "6": "Erholsame Erfahrung"
+    },
+    "imgBoxes": {
+      "1": {
+        "duration": "2 Nächte",
+        "mainCtaLabel": "Informationen anfordern",
+        "otherCtaLabel": "Was ist im Erlebnis enthalten?",
+        "text": "Trennen, um sich wieder zu verbinden. Ein Erlebnis bei Friland begleitet von einem Booklet, das individuell oder auf Unternehmensebene angepasst werden kann und Anregungen, Übungen, Inspirationen und Ideen enthält. Eine ideale Plattform bestehend aus Elementen wie: Natur, Privatsphäre, Ruhe, Zeit und Raum zum Konzentrieren.",
+        "title": "<important>Booklet</important> Friland"
+      },
+      "2": {
+        "duration": "2 Nächte",
+        "mainCtaLabel": "Informationen anfordern",
+        "otherCtaLabel": "Was ist im Erlebnis enthalten?",
+        "text": "Ein einzigartiger Ort, um in Ruhe und ohne Ablenkungen zu arbeiten. Entdecken Sie die Vorteile, die die Natur für die Arbeit bieten kann, bei Friland finden Sie Ihre Zeit und Ihren Raum.",
+        "title": "<important>Smart</important> Working"
+      },
+      "3": {
+        "duration": "1 oder mehr Nächte",
+        "mainCtaLabel": "Informationen anfordern",
+        "otherCtaLabel": "Was ist im Erlebnis enthalten?",
+        "text": "Belohnen Sie einen Mitarbeiter mit einer Flucht in die Natur, ein einzigartiges Erlebnis, um neue Energie zu tanken.",
+        "title": "<important>Firmen</important> Vorteil"
+      },
+      "text": "Das <important>Erlebnisformat</important> Friland für Ihre Mitarbeiter",
+      "title": "Ein einzigartiger Aufenthalt"
+    },
+    "title": "Erlebnisse von <important>Wert</important>"
+  },
+  "Contact": {
+    "_meta": {
+      "title": "Brauchen Sie Informationen? Hier sind unsere Kontakte!",
+      "description": "Auf dieser Seite finden Sie alle Möglichkeiten, um mit Friland in Kontakt zu treten. Bei Fragen oder Informationen zögern Sie nicht, uns zu kontaktieren!"
+    },
+    "create_password_success": {
+      "text": "Sie können jetzt mit den gerade festgelegten Anmeldedaten auf den persönlichen Bereich zugreifen",
+      "title": "Neues Passwort erfolgreich erstellt"
+    },
+    "cta_boxes": {
+      "one": {
+        "cta_1": "Kontaktieren Sie uns",
+        "cta_2": "Kontaktieren Sie uns 2",
+        "heading": "Brauchen Sie Hilfe?",
+        "subheading": "Kontaktieren Sie uns für Informationen oder Unterstützung"
+      },
+      "two": {
+        "cta_1": "Kontaktieren Sie uns",
+        "cta_2": "Kontaktieren Sie uns 2",
+        "heading": "Brauchen Sie Hilfe?",
+        "subheading": "Kontaktieren Sie uns für Informationen oder Unterstützung"
+      }
+    },
+    "form_fields": {
+      "city": "Stadt",
+      "describe_location": "Beschreiben Sie das Problem/Anfordern von Informationen",
+      "email": "E-Mail",
+      "location": "Standort",
+      "message": "Nachricht",
+      "name": "Name",
+      "newsletter": "Abonnieren Sie den Newsletter",
+      "password": "Passwort",
+      "password_confirm": "Passwort bestätigen",
+      "phone": "Handy",
+      "property_additional_info": "Leben Sie auf dem Grundstück oder in der Nähe?",
+      "property_address": "Koordinaten oder Link zu Maps",
+      "property_size": "Größe des Grundstücks",
+      "property_useful_info": "Weitere nützliche Informationen",
+      "reasons_for_contact": {
+        "1": "Informationsanfrage",
+        "2": "Technischer Support",
+        "3": "Andere"
+      },
+      "submit": "Senden",
+      "submitting": "Senden...",
+      "surname": "Nachname",
+      "terms": "Ich habe die <privacy_link>Datenschutzerklärung</privacy_link> und die <tos_link>Bedingungen</tos_link> gelesen und akzeptiere sie",
+      "why_contact": "Grund für den Kontakt"
+    },
+    "form_fields_errors": {
+      "city": "Bitte geben Sie die Stadt an",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "location": "Bitte geben Sie den Standort an",
+      "message": "Bitte fügen Sie eine Nachricht hinzu",
+      "name": "Bitte geben Sie den Namen an",
+      "password": "Bitte geben Sie ein Passwort ein",
+      "password_confirm": "Bitte bestätigen Sie das Passwort",
+      "password_match": "Die Passwörter stimmen nicht überein, bitte überprüfen",
+      "phone": "Bitte hinterlassen Sie Ihre Telefonnummer",
+      "property_additional_info": "Bitte fügen Sie weitere Informationen hinzu",
+      "property_address": "Bitte geben Sie die Adresse der Immobilie an",
+      "property_size": "Bitte fügen Sie die Größe der Immobilie hinzu",
+      "reasons_for_contact": "Bitte geben Sie den Grund für Ihre Kontaktaufnahme an",
+      "surname": "Bitte geben Sie den Nachnamen an",
+      "terms": "Bitte akzeptieren Sie die Bedingungen, um fortzufahren",
+      "why_contact": "Bitte geben Sie den Grund für Ihre Kontaktaufnahme an"
+    },
+    "form_success": {
+      "text": "Wir werden Ihnen so schnell wie möglich antworten",
+      "title": "Danke für die Nachricht"
+    },
+    "instructions": "Alle Informationen sind sicher und verschlüsselt. Die mit * markierten Felder sind Pflichtfelder",
+    "title": "Kontaktieren Sie uns"
+  },
+  "Destination": {
+    "features": {
+      "features_grid": {
+        "bathroom": {
+          "text": "Dusche und nicht chemische Toilette",
+          "title": "Badezimmer"
+        },
+        "breakfast_kit": {
+          "text": "Eine Auswahl an leckeren und gesunden Produkten.",
+          "title": "Frühstücksset"
+        },
+        "double_bed": {
+          "text": "Großes Bett für zwei Erwachsene und ein Kind unter 10 Jahren.",
+          "title": "Doppelbett"
+        },
+        "essentials": {
+          "text": "Bettwäsche, Handtücher, Seife und Toilettenpapier",
+          "title": "Notwendiges"
+        },
+        "kitchen": {
+          "text": "Inklusive Induktionsherd, Kühlschrank, Töpfe und Geschirr",
+          "title": "Küche"
+        },
+        "panoramic_window": {
+          "title": "Panoramafenster"
+        },
+        "safety_devices": {
+          "text": "Rauchmelder, Feuerlöscher und Erste-Hilfe-Kasten.",
+          "title": "Sicherheitsvorrichtungen"
+        },
+        "temperature_control": {
+          "text": "Belüftungs- und Heizungssysteme",
+          "title": "Temperaturregelung"
+        },
+        "info": {
+          "pet_allowed": "Haustiere erlaubt",
+          "pet_non_allowed": "Haustiere NON erlaubt",
+          "location": "von",
+          "distance": "Entfernung zum Parkplatz:",
+          "min_price": "Preise ab",
+          "m": "m",
+          "abb": "Nacht"
+        },
+        "title": "Was Sie <important>finden werden</important>"
+      },
+      "features_description": { 
+        "title": "Ab",
+         "text": " 2-nächtliche Erlebnisse unter der Woche:",
+         "price": "nacht"
+        },
+      "features_list": {
+        "comfort_and_safety": {
+          "title": "Komfort und Sicherheit"
+        },
+        "parking": {
+          "text": "Das Zimmer befindet sich %smt vom Parkplatz entfernt",
+          "title": "Parken"
+        },
+        "self_checkin": {
+          "title": "Selbst-Check-in",
+          "text": "Innen 11:00 Uhr"
+        },
+        "self_checkout": {
+          "title": "Selbst-Check-out",
+          "text": "Ab 15:00 Uhr"
+        },
+        "territory_exploration": {
+          "text": "wird einige Tage vor dem Check-in per E-Mail gesendet",
+          "title": "Leitfaden zur Erkundung des Gebiets"
+        }
+      },
+      "features_list_notes": "Jedes Zimmer ist mit einem großen und bequemen Doppelbett ausgestattet, das maximal zwei Erwachsene und ein Kind unter 10 Jahren beherbergen kann. Haustiere, wenn in diesem Reiseziel erlaubt, sind willkommen, dürfen aber nicht auf das Bett. Der Preis des Zimmers ist fest, ändert sich nicht mit der Anzahl der Gäste."
+    },
+    "map": {
+      "here": "hier",
+      "note": "Unser Zimmer befindet sich in der Gemeinde %s, in der Provinz %s. Finden Sie heraus, wie Sie dorthin gelangen, indem Sie klicken"
+    },
+    "related_heading": "Ähnliche Ziele"
+  },
+  "Destinations": {
+    "not_found": "Leider haben wir keine Ziele gefunden, die Ihrer Suche entsprechen. Versuchen Sie, die Suche zu verfeinern, oder schauen Sie sich unsere anderen Ziele an, oder <reset_button>klicken Sie hier</reset_button>, um die Filter zu löschen",
+    "title": "Ihr Aufenthalt in der Natur"
+  },
+  "Drawers": {
+    "go_back": "Zurück"
+  },
+  "Errors": {
+    "pageNotFound": {
+      "content": "Seite nicht gefunden",
+      "title": "Fehler 404"
+    }
+  },
+  "Faq": {
+    "_meta": {
+      "description": "Alles, was Sie wissen müssen, finden Sie auf dieser Seite. Entdecken Sie die FAQ von Friland mit allen Antworten, die Sie zu Unterkünften, Standorten und Serviceinformationen benötigen.",
+      "title": "FAQ: Häufig gestellte Fragen zu Friland und Unterkünften"
+    },
+    "subHeader": {
+      "title": "Die <important>häufig gestellten Fragen</important>: alles, was Sie wissen müssen"
+    },
+    "title": "Häufig gestellte Fragen"
+  },
+  "Footer": {
+    "company_info": "Friland S.r.l. - Via Taboga 307, 33013 - Gemona del Friuli, Udine (Italien) <br/> P.I. und C.F. 02947490302 - C.SDI 9SUB64Q - C.S € 93.645,64",
+    "newsletter": {
+      "form": {
+        "email_placeholder": "Ihre E-Mail-Adresse",
+        "submit_label": "Newsletter senden"
+      },
+      "text": "Abonnieren Sie unseren Newsletter, um über unsere Angebote, neue Reiseziele, Veranstaltungen und die Welt der Frilander auf dem Laufenden zu bleiben.",
+      "title": "Bleiben Sie immer auf dem Laufenden"
+    },
+    "privacy_text": "Mit dem Drücken der Senden-Schaltfläche erkläre ich, dass ich die <privacy_link>Datenschutzerklärung</privacy_link> gelesen und akzeptiert habe",
+    "titles": {
+      "nav1": "Die Welt von Friland",
+      "nav2": "Brauchen Sie Informationen oder Unterstützung?"
+    }
+  },
+  "Forms": {
+    "buttons": {
+      "cancel": "Abbrechen",
+      "cancelling": "Abbrechen",
+      "save": "Speichern",
+      "saving": "Speichern",
+      "search": "Suchen",
+      "searching": "Suchen",
+      "submit": "Senden",
+      "submitting": "Senden",
+      "update": "Aktualisieren",
+      "updating": "Aktualisieren"
+    },
+    "create_password": {
+      "first_time": "Erstellen Sie ein neues Passwort",
+      "reset": "Geben Sie ein neues Passwort ein"
+    },
+    "generic": {
+      "fields": {
+        "email": {
+          "errors": {
+            "required": "Geben Sie eine gültige E-Mail-Adresse ein"
+          },
+          "label": "E-Mail"
+        },
+        "name": {
+          "errors": {
+            "required": "Geben Sie den Namen ein"
+          },
+          "label": "Name"
+        },
+        "newsletter": {
+          "label": "Newsletter abonnieren"
+        },
+        "phone": {
+          "errors": {
+            "required": "Geben Sie eine Telefonnummer ein",
+            "too_short": "Geben Sie eine gültige Telefonnummer ein"
+          },
+          "label": "Telefon"
+        },
+        "surname": {
+          "errors": {
+            "required": "Geben Sie den Nachnamen ein"
+          },
+          "label": "Nachname"
+        },
+        "terms": {
+          "errors": {
+            "required": "Bitte akzeptieren Sie die Bedingungen"
+          },
+          "label": "Ich habe die <privacy_link>Datenschutzerklärung</privacy_link> und die <tos_link>Bedingungen</tos_link> gelesen"
+        }
+      },
+      "instructions": "Alle übermittelten Informationen sind geschützt und verschlüsselt. Die mit * markierten Felder sind Pflichtfelder.",
+      "messages": {
+        "password_updated_ok": "Passwort erfolgreich aktualisiert"
+      },
+      "success": {
+        "text": "Vielen Dank für Ihr Interesse an Friland. Ihre Nachricht wurde erfolgreich gesendet und wir werden Ihnen so schnell wie möglich antworten.",
+        "title": "Vielen Dank!"
+      }
+    },
+    "login": {
+      "fields": {
+        "email": {
+          "errors": {
+            "required": "Geben Sie eine gültige E-Mail-Adresse ein"
+          },
+          "label": "E-Mail"
+        },
+        "password": {
+          "errors": {
+            "required": "Geben Sie ein Passwort ein"
+          },
+          "label": "Passwort"
+        },
+        "remember_me": {
+          "label": "Erinnere dich an mich"
+        }
+      },
+      "recover_cta": "Passwort vergessen?",
+      "register_cta": "Registrieren",
+      "submit_cta": "Einloggen"
+    },
+    "partners": {
+      "fields": {
+        "property_additional_info": {
+          "errors": {
+            "required": "Geben Sie weitere Informationen zur Immobilie ein"
+          },
+          "label": "Weitere Informationen zur Immobilie"
+        },
+        "property_address": {
+          "errors": {
+            "required": "Geben Sie die Adresse der Immobilie ein"
+          },
+          "label": "Adresse der Immobilie"
+        },
+        "property_size": {
+          "errors": {
+            "required": "Geben Sie die Größe der Immobilie ein"
+          },
+          "label": "Größe der Immobilie"
+        },
+        "property_useful_info": {
+          "errors": {
+            "required": "Geben Sie nützliche Informationen zur Immobilie ein"
+          },
+          "label": "Nützliche Informationen zur Immobilie"
+        }
+      },
+      "why_title": "Warum möchten Sie unser Partner werden?"
+    },
+    "register": {
+      "fields": {
+        "confirm_password": {
+          "errors": {
+            "no_match": "Die Passwörter stimmen nicht überein"
+          },
+          "label": "Passwort bestätigen"
+        },
+        "email": {
+          "errors": {
+            "required": "Geben Sie eine gültige E-Mail-Adresse ein"
+          },
+          "label": "E-Mail"
+        },
+        "name": {
+          "errors": {
+            "required": "Name ist erforderlich",
+            "too_short": "Name zu kurz"
+          },
+          "label": "Name"
+        },
+        "old_password": {
+          "errors": {
+            "required": "Geben Sie Ihr altes Passwort ein"
+          },
+          "label": "Altes Passwort"
+        },
+        "password": {
+          "errors": {
+            "required": "Geben Sie ein Passwort ein",
+            "same_as_old": "Das neue Passwort muss sich vom alten unterscheiden"
+          },
+          "label": "Passwort"
+        },
+        "phone": {
+          "errors": {
+            "required": "Geben Sie eine Handynummer ein",
+            "too_short": "Geben Sie eine gültige Handynummer ein"
+          },
+          "label": "Handy"
+        },
+        "surname": {
+          "errors": {
+            "required": "Nachname ist erforderlich"
+          },
+          "label": "Nachname"
+        }
+      },
+      "submit_cta": "Registrieren"
+    },
+    "reset_password": {
+      "content": {
+        "text": "Geben Sie die E-Mail-Adresse ein, mit der Sie das Konto erstellt haben, und wir senden Ihnen einen Link zum Zurücksetzen des Passworts",
+        "title": "Setzen Sie Ihr Passwort zurück"
+      },
+      "fields": {
+        "email": {
+          "errors": {
+            "required": "Geben Sie eine gültige E-Mail-Adresse ein"
+          },
+          "label": "E-Mail"
+        }
+      },
+      "submit_cta": "Zurücksetzen"
+    },
+    "send_gift_card": {
+      "fields": {
+        "message": {
+          "errors": {
+            "required": "Geben Sie eine Nachricht ein"
+          },
+          "label": "Nachricht"
+        },
+        "receiver_email": {
+          "errors": {
+            "required": "Geben Sie die E-Mail-Adresse des Empfängers ein"
+          },
+          "label": "E-Mail des Empfängers"
+        },
+        "receiver_name": {
+          "errors": {
+            "required": "Geben Sie den Namen des Empfängers ein"
+          },
+          "label": "Name des Empfängers"
+        },
+        "receiver_surname": {
+          "errors": {
+            "required": "Geben Sie den Nachnamen des Empfängers ein"
+          },
+          "label": "Nachname des Empfängers"
+        },
+        "send_date": {
+          "label": "Versanddatum",
+          "label_alt": "Wann möchten Sie die Geschenkkarte senden?"
+        }
+      },
+      "insert_receiver_data": "Geben Sie die Daten des Empfängers ein",
+      "print_instructions": {
+        "email": "Geben Sie Ihre E-Mail-Adresse ein. Wir senden Ihnen die Informationen zum Herunterladen der Karte im PDF-Format",
+        "name": "Geben Sie den Namen des Empfängers ein"
+      },
+      "send_deferred": "Wann möchten Sie die Geschenkkarte senden?",
+      "submit_cta": "Senden",
+      "your_message": "Ihre Nachricht"
+    },
+    "user_profile": {
+      "cancel_cta": "Abbrechen",
+      "fields": {
+        "email": {
+          "errors": {
+            "required": "Geben Sie eine gültige E-Mail-Adresse ein"
+          },
+          "label": "E-Mail"
+        },
+        "name": {
+          "errors": {
+            "required": "Name ist erforderlich"
+          },
+          "label": "Name"
+        },
+        "newsletter": {
+          "label_off": "Abmelden vom Newsletter",
+          "label_on": "Abonnieren Sie den Newsletter"
+        },
+        "phone": {
+          "errors": {
+            "required": "Geben Sie eine Handynummer ein",
+            "too_short": "Geben Sie eine gültige Handynummer ein"
+          },
+          "label": "Handy"
+        },
+        "surname": {
+          "errors": {
+            "required": "Nachname ist erforderlich"
+          },
+          "label": "Nachname"
+        }
+      },
+      "submit_cta": "Speichern"
+    }
+  },
+  "GiftCard": {
+    "_meta": {
+      "description": "Möchten Sie einen Aufenthalt an einen Verwandten oder Freund verschenken? Friland bietet Werbepakete, die auf jeden Gast zugeschnitten sind. Entdecken Sie sie online.",
+      "title": "Geschenkkarten und Werbeaktionen: Entdecken Sie alle Angebote von Friland"
+    },
+    "add": "Hinzufügen",
+    "adding": "Hinzufügen",
+    "buy_cta": "Kaufen",
+    "included": "Was beinhaltet das Erlebnis?",
+    "title": "Ein <important>magisches</important> und erholsames Geschenk"
+  },
+  "Header": {
+    "nav": {
+      "blog": "Blog",
+      "chat": "Sprechen Sie mit uns",
+      "destination": "Reiseziele",
+      "gift_card": "Geschenkkarten"
+    }
+  },
+  "Home": {
+    "_meta": {
+      "description": "Erleben Sie die Friland-Erfahrung: Tauchen Sie ein in die Natur mit unseren Tiny Houses, um Gleichgewicht und Gelassenheit zu finden. Entdecken Sie die Lösungen.",
+      "title": "Friland: Schlafen in einem Zimmer in der Natur"
+    },
+    "cta": {
+      "items": {
+        "item1": {
+          "buttonLabel": "Entdecken",
+          "title": "Buchen Sie Ihren Aufenthalt"
+        },
+        "item2": {
+          "buttonLabel": "Entdecken",
+          "title": "Werden Sie unser Partner"
+        }
+      }
+    },
+    "features": {
+      "cta": {
+        "label": "Entdecken Sie unsere Reiseziele"
+      }
+    },
+    "giftCardBox": {
+      "cta": {
+        "label": "Kaufen Sie eine Geschenkkarte"
+      },
+      "text": "Träumen Sie davon, mehr als nur ein einfaches Objekt zu verschenken? Unsere Geschenkkarten sind der Schlüssel zu einem außergewöhnlichen Abenteuer.",
+      "title": "Verwandeln Sie einen Moment in eine <important>unvergessliche</important> Erinnerung!"
+    },
+    "missionBox": {
+      "cta": {
+        "label": "Entdecken Sie die Reiseziele"
+      }
+    },
+    "scroll_down": "Mehr erfahren"
+  },
+  "InfoBoxes": {
+    "info": {
+      "actions": {
+        "cta1": {
+          "label": "KONSULTIEREN SIE DEN FAQ-BEREICH"
+        },
+        "cta2": {
+          "label": "KONTAKTIEREN SIE DEN SUPPORT"
+        }
+      },
+      "text": "Starten Sie eine Chat mit einem unserer Operatoren, indem Sie auf den entsprechenden Button unten rechts klicken, oder wählen Sie eine der folgenden Optionen:",
+      "title": "Brauchen Sie weitere Informationen?"
+    },
+    "ourOffice": {
+      "actions": {
+        "cta1": {
+          "label": "Auf der Karte öffnen"
+        }
+      },
+      "text": "",
+      "title": "Besuchen Sie uns in unseren Büros in der Via Taboga 307 - 33013 Gemona del Friuli, Udine"
+    }
+  },
+  "Meta": {
+    "destination_archive": {
+      "title": {
+        "in_region": "Reiseziele in {region}",
+        "landing": "Reiseziele"
+      }
+    }
+  },
+  "MostClickedDestinations": {
+    "title": "Meistgeklickte Reiseziele"
+  },
+  "MyGiftCards": {
+    "active": "Aktiv",
+    "cta_send": "Senden Sie Ihre Geschenkkarte",
+    "cta_send_description": "Mit einem Klick auf den Button können Sie die E-Mail-Adresse eingeben, an die wir die Anweisungen zur Nutzung der Geschenkkarte senden.",
+    "cta_use": "Verwenden Sie die Geschenkkarte",
+    "cta_use_description": "Durch Klicken auf den Button wird der Rabattbetrag der Geschenkkarte direkt im Warenkorb beim Checkout angewendet",
+    "expired": "Abgelaufen",
+    "expires": "Läuft ab am %s",
+    "insert_receiver_data": "Geben Sie die Daten des Empfängers ein",
+    "label_cancel": "Abbrechen",
+    "label_modify": "Ändern",
+    "no_gift_cards": "Sie haben keine Geschenkkarten",
+    "no_gift_cards_cta_label": "Sehen Sie sich die verfügbaren Geschenkkarten an",
+    "number_of_nights": "%s Nacht/Nächte",
+    "page_title": "Meine Geschenkkarten",
+    "send_deferred": "Wann möchten Sie das Geschenk senden?",
+    "your_message": "Ihre Nachricht",
+    "sent": "Geschenkkarte wurde erfolgreich versendet"
+  },
+  "Navigation": {
+    "become_partner": "Werden Sie Partner",
+    "contact": "Kontaktieren Sie uns",
+    "cookie": "Cookie-Richtlinie",
+    "faq": "FAQ",
+    "privacy": "Datenschutzrichtlinie",
+    "project": "Das Projekt",
+    "refund": "Rückgaberichtlinie",
+    "services": "Dienstleistungen für Unternehmen",
+    "terms": "Allgemeine Geschäftsbedingungen"
+  },
+  "NewDestinations": {
+    "cta_label": "Entdecken",
+    "message": "Lorem Ipsum",
+    "subtitle": "Unsere Zimmer",
+    "title": "Die neuen <important>Reiseziele</important>"
+  },
+  "OneMany": {
+    "night": "{count, plural, =1 {# Nacht} other {# Nächte}}"
+  },
+  "OurImpactBox": {
+    "features": {
+      "1": {
+        "text": "Energieeinsparung für Heizung und Beleuchtung."
+      },
+      "2": {
+        "text": "Wassereinsparung für Küche und Bad."
+      }
+    },
+    "title": "Unser Einfluss"
+  },
+  "Partners": {
+    "_meta": {
+      "description": "Erfahren Sie mehr über die Vorteile, Partner von Friland zu werden. Teilen Sie unsere Werte der Nachhaltigkeit und fördern Sie verantwortungsvollen Tourismus in Ihrer Region.",
+      "title": "Werden Sie ein Friland-Partner: Entdecken Sie Vorteile und Möglichkeiten"
+    },
+    "features": {
+      "what_we_look_for": {
+        "accessibility": {
+          "text": "Es ist wichtig, dass der Standort vom Parkplatz aus zu Fuß erreichbar ist.",
+          "title": "Zugänglichkeit"
+        },
+        "landscape": {
+          "text": "Es spielt keine Rolle, ob Ihr Land am Berg, Meer oder See liegt, wichtig ist, dass seine Schönheit beeindruckt.",
+          "title": "Panorama"
+        },
+        "nature": {
+          "text": "Wir suchen nach Gebieten, die in der Natur liegen und die Anwesenheit des Menschen so wenig wie möglich zeigen.",
+          "title": "Natur"
+        },
+        "quiteness": {
+          "text": "Ein Eintauchen in die Natur ist nur dann vollständig, wenn Ruhe und Stille garantiert sind.",
+          "title": "Ruhe"
+        },
+        "title": "Was wir suchen"
+      },
+      "what_we_offer": {
+        "additional_income": {
+          "text": "Wir bieten unseren Partnern ein Einkommen für die Nutzung ihres Grundstücks für die gesamte Dauer unseres Aufenthalts.",
+          "title": "Zusätzliches Einkommen"
+        },
+        "flexibility": {
+          "text": "Die Zimmer von Friland sind mobil und off-grid, sollten sich die Anforderungen ändern, bleibt von Friland keine Spur zurück.",
+          "title": "Flexibilität"
+        },
+        "promoting_your_service": {
+          "text": "Die Friland-Community ist sehr aktiv und aufmerksam auf alle lokalen Angebote, von typischen Produkten bis hin zu Ausflügen oder Erlebnissen in der Region.",
+          "title": "Wir fördern Ihre Dienstleistungen"
+        },
+        "title": "Was wir bieten",
+        "value_partner": {
+          "text": "Eintritt in das Friland-Netzwerk bedeutet, seine Werte und seine Mission zu teilen: den Respekt für die Natur und ihre Ressourcen.",
+          "title": "Ein wertvoller Partner"
+        }
+      }
+    },
+    "how_it_works": {
+      "steps": {
+        "step1": {
+          "text": "Wir stellen Ihnen eines unserer Zimmer zur Verfügung und kümmern uns um den Aufbau."
+        },
+        "step2": {
+          "text": "Wir erledigen die gesamte Bürokratie, die Buchungen und den Aufenthalt der Gäste. Es ist nicht erforderlich, dass Sie beim Check-in oder Check-out anwesend sind."
+        },
+        "step3": {
+          "text": "Wir überwachen alle Ressourcen des Zimmers aus der Ferne. Wir bieten Ihnen eine Schulung für die einfachen Wartungsarbeiten an. Wir haben eine eigene App zur Unterstützung entwickelt."
+        }
+      },
+      "title": "So funktioniert es"
+    },
+    "infos": {
+      "box1": {
+        "actions": {
+          "cta1": {
+            "label": "Auf der Karte öffnen"
+          }
+        },
+        "text": "",
+        "title": "Besuchen Sie uns in unseren Büros in der Via Taboga 307 - 33013 Gemona del Friuli, Udine"
+      },
+      "box2": {
+        "actions": {
+          "cta1": {
+            "label": "KONSULTIEREN SIE DEN FAQ-BEREICH"
+          },
+          "cta2": {
+            "label": "KONTAKTIEREN SIE DEN SUPPORT"
+          }
+        },
+        "text": "Starten Sie einen Chat mit einem unserer Operatoren, indem Sie auf den entsprechenden Button unten rechts klicken, oder wählen Sie eine der folgenden Optionen:",
+        "title": "Brauchen Sie weitere Informationen?"
+      }
+    },
+    "text": "Das Hosting einer Friland-Unterkunft bedeutet, eine Vision des Tourismus zu teilen, die Menschen und Umwelt respektiert, um die Schönheiten und Besonderheiten des Gebiets zu bieten",
+    "title": "Werden Sie <important>Partner</important>"
+  },
+  "Profile": {
+    "access": {
+      "description": "Auf <important>dieser Seite</important> können Sie die Nutzung Ihrer Daten überprüfen, eine Kopie anfordern oder Ihre Informationen löschen.",
+      "title": "Betreten"
+    },
+    "label_cancel": "Abbrechen",
+    "label_modify": "Ändern",
+    "my_data": "Persönliche Informationen",
+    "newsletter": {
+      "label_off": "Sie sind derzeit nicht für den Newsletter angemeldet",
+      "label_on": "Sie sind derzeit für den Newsletter angemeldet"
+    },
+    "update_password": {
+      "cta_button": "PASSWORT ÄNDERN",
+      "title": "Passwort aktualisieren"
+    }
+  },
+  "Regions": {
+    "all": "Alle",
+    "cta": "Entdecken Sie unsere Unterkünfte in {region}"
+  },
+  "Reservation": {
+    "cancel_label": "Abbrechen",
+    "cancellation_text": "Es ist nicht mehr möglich, den Aufenthalt zu stornieren. Für weitere Informationen kontaktieren Sie bitte unseren Kundenservice über das Feld am Ende der Seite.",
+    "date_from": "Von",
+    "date_to": "Bis",
+    "deleted": "Gelöscht",
+    "guests_children": "%s Kinder",
+    "guests_content": "%s Erwachsene",
+    "guests_label": "Gäste",
+    "help_box": {
+      "cta": {
+        "1": {
+          "label": "Werfen Sie einen Blick auf die FAQ"
+        },
+        "2": {
+          "label": "Kontaktieren Sie den Kundenservice"
+        }
+      },
+      "text": "Lesen Sie unsere FAQ, wenn Sie nicht finden, was Sie suchen, können Sie immer unseren Kundenservice schreiben.",
+      "title": "Brauchen Sie Hilfe?"
+    },
+    "meal_kit_desc": "Frühstücksset für {days_count} Tag(e), {user_count} Personen",
+    "nights_label": "{night_count, plural, =0 {keine} =1 {Nacht} other {# Nächte}}.",
+    "no_reservation": "Sie haben keine Reservierungen",
+    "no_reservation_cta_label": "Gehen Sie zu unseren Reisezielen",
+    "pets_desc": "Reinigungszuschlag für Hund enthalten",
+    "tax_desc": "%s Steuern enthalten",
+    "title": "Meine Reservierung"
+  },
+  "SearchForm": {
+    "all_locations": "Alle Reiseziele",
+    "date_picker_cta_short": "Von wann bis wann?",
+    "date_picker_end": "Bis",
+    "date_picker_short": "<b>Von</b> {start} <b>bis</b> {end}",
+    "date_picker_start": "Von",
+    "pick_date_cta": "Wählen Sie die Daten",
+    "where": "Wo",
+    "search_cta": "Buch",
+    "select_cta": "Auswählen",
+    "region": "Wählen Sie die Region aus"
+  },
+  "SingleLocation": {
+    "related_heading": "Ähnliche Reiseziele"
+  },
+  "SingleLocationOrder": {
+    "book_now": "Buchen",
+    "date_picker_end": "Bis",
+    "date_picker_start": "Von",
+    "day_count_summary": "Buchen {night_count} Nacht/Nächte",
+    "pick_date_cta": "Wählen Sie die Daten"
+  },
+  "Testimonials": {
+    "subtitle": "Verifizierte Bewertungen von Friland",
+    "title": "Was unsere Kunden <important>sagen</important>"
+  },
+  "UserProfile": {
+    "email": "E-Mail",
+    "greetings": "Hallo <user></user>!",
+    "login_cta": "Einloggen",
+    "login_title": "Einloggen",
+    "password": "Passwort",
+    "profile_links": {
+      "logout": "Abmelden",
+      "my_gift_cards": "Meine Geschenkkarten",
+      "my_profile": "Mein Profil",
+      "my_reservations": "Meine Buchungen",
+      "pending_checkout": "Buchung abschließen"
+    },
+    "profile_title": "Persönlicher Bereich"
+  },
+  "guest_count": {
+    "dropdown": {
+      "1": "Ein Erwachsener",
+      "2": "Zwei Erwachsene",
+      "3": "1 Erwachsener + 1 Kind",
+      "4": "2 Erwachsene + 1 Kind"
+    },
+    "guests": "Gäste",
+    "guests_default": "Wie viele Gäste?"
+  },
+  "ExternalConfirmation": {
+    "content": "Um ein sicheres Surferlebnis in Übereinstimmung mit den geltenden Datenschutzbestimmungen zu gewährleisten, müssen Sie die Datenschutzbestimmungen akzeptieren. Die Annahme dieser Bedingungen ist erforderlich, um auf die Seiten und Dienste zuzugreifen, die den Benutzern des MINTUR-Systems vorbehalten sind.",
+    "content_rejected": "Ihr Token ist abgelaufen oder Sie haben nicht mehr die erforderlichen Berechtigungen, um auf diese Seite zuzugreifen. Wir empfehlen, sich erneut anzumelden oder den Administrator zu kontaktieren, um Ihre Zugriffsrechte zu überprüfen.",
+    "cta": "Akzeptieren",
+    "cta_busy": "Verarbeitung"
+  }
+}

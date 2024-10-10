@@ -1,0 +1,128 @@
+@use "../config";
+
+.feature-section-9 {
+}
+
+.feature-section-9__content {
+    padding-top: 5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 14rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.feature-section-9__title {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 4.4rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 8rem;
+    }
+}
+
+.feature-section-9__content-wrapper {
+    display: grid;
+    gap: 3.6rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 6rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        grid-template-columns: 5fr 4fr;
+        column-gap: 14rem;
+        row-gap: 12rem;
+    }
+}
+
+.feature-section-9__features-unit {
+    @media (min-width: config.$breakpoint-xl) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
+.feature-section-9__features-wrapper {
+    --col-num: 1;
+    --row-gap: 4rem;
+    --column-gap: 2rem;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+    border: solid config.$color-gray-300;
+    border-width: 0.1rem 0 0;
+    display: grid;
+    row-gap: var(--row-gap);
+    column-gap: var(--column-gap);
+    grid-template-columns: repeat(var(--col-num), 1fr);
+
+    @media (min-width: config.$breakpoint-md) {
+        --col-num: 2;
+        --column-gap: 4rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-width: 0.1rem 0;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        --col-num: 1;
+        --row-gap: 1.7rem;
+    }
+}
+
+.feature-section-9__feature-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2.7rem;
+    text-align: left;
+}
+
+.feature-section-9__feature-icon-wrapper {
+    border-radius: 50%;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: config.$color-amber-200;
+}
+
+.feature-section-9__feature-icon {
+    display: block;
+    width: auto;
+    height: 4rem;
+}
+
+.feature-section-9__feature-title {
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.feature-section-9__gallery-unit {
+    padding-bottom: 6rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 15rem;
+    }
+}
+
+.feature-section-9__gallery-container {
+    @media (max-width: (config.$breakpoint-md - 1)) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

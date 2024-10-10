@@ -1,0 +1,144 @@
+@use "../config";
+
+.location-grid {
+  --col-num: 1;
+  --units-gap: 3.5rem;
+
+  @media (min-width: config.$breakpoint-sm) {
+    --col-num: 2;
+  }
+
+  @media (min-width: config.$breakpoint-lg) {
+    --col-num: 3;
+  }
+}
+
+.location-grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--col-num), 1fr);
+  gap: var(--units-gap);
+
+  @media (min-width: config.$breakpoint-xl) {
+    --units-gap: 7.3rem;
+  }
+}
+
+.location-grid__location {
+  position: relative;
+}
+
+.location-grid__location-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.location-grid__location-image-wrapper {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: config.$breakpoint-lg) {
+    margin-bottom: 2rem;
+  }
+}
+
+.location-grid__location-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.location-grid__location-new {
+  position: absolute;
+  padding: 2rem 2.8rem 1.7rem;
+  border-radius: 3rem;
+  right: -1.5rem;
+  bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: config.$color-white;
+  background-color: config.$color-emerald-500;
+}
+
+.location-grid__location-name {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.location-grid__location-availability {
+  font-style: italic;
+  color: config.$color-gray-400;
+  margin-bottom: 0;
+}
+
+.location-grid__location-logo {
+  width: auto;
+  height: 1.7rem;
+  display: block;
+}
+
+.location-grid__location-info {
+  display: block;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-family: config.$font-primary;
+}
+.location-grid__location-tag {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 50px;
+}
+.location-grid__location-tag-image {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: config.$color-emerald-700;
+  padding: 0.2rem;
+  border-radius: 100%;
+}
+.location-grid__location-tag-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: config.$color-gray-400;
+  margin-left: 1rem;
+  margin-block: 1rem;
+  font-style: italic;
+}
+.location-grid__location-tags {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  margin-left: 0.5rem;
+  border-top: 1px solid config.$color-amber-200;
+  border-bottom: 1px solid config.$color-amber-200;
+}
+.location-grid__location-icon-wrapper {
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 1rem;
+}
+.location-grid__location-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.location-grid__location-info-text, .location-grid__location-info-bold {
+  font-family: config.$font-primary;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: config.$color-gray-400;
+}
+.price {
+    padding-top: 1.5rem;
+    margin-left: 5.5rem;
+}
+.location-grid__location-info-bold {
+    font-weight:600;
+    color: config.$color-gray-700;
+  }

@@ -1,0 +1,88 @@
+@use "../config";
+
+.gallery-3 {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.gallery-3__container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+}
+
+.gallery-3__carousel {
+    position: relative;
+}
+
+.gallery-3__carousel-slide {
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 112%;
+
+    @media (min-width: config.$breakpoint-sm) {
+        padding-bottom: 66%;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 53%;
+    }
+}
+
+.gallery-3__carousel-image {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-3__carousel-dots-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-lg) {
+        bottom: 6rem;
+    }
+}
+
+.gallery-3__carousel-button {
+    display: none;
+}
+
+@media (hover: hover) and (min-width: config.$breakpoint-2xl) {
+    .gallery-3.carousel-is-ready .gallery-3__carousel-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+        opacity: 0;
+        transition: opacity 300ms;
+        color: config.$color-emerald-700;
+
+        &--prev {
+            left: -8.6rem;
+        }
+
+        &--next {
+            right: -8.6rem;
+        }
+    }
+
+    .gallery-3.carousel-is-ready:hover .gallery-3__carousel-button {
+        opacity: 1;
+    }
+}

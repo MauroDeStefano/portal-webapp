@@ -1,0 +1,167 @@
+@use "../config";
+
+.gift-card-cart-bar {
+    @media (max-width: (config.$breakpoint-lg + 1)) {
+        display: none;
+    }
+}
+
+.gift-card-cart-bar__wrapper {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 4.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 82rem;
+    height: 10.2rem;
+    border-radius: 5rem;
+    border: 0.5rem solid config.$color-emerald-700;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    gap: 7rem;
+    background-color: config.$color-white;
+    box-shadow: 0 0.3rem 0.6rem hsla(0, 0%, 0%, 0.38);
+}
+
+.gift-card-cart-bar__overview {
+    padding-left: 5rem;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.gift-card-cart-bar__overview--selected {
+    cursor: pointer;
+}
+
+.gift-card-cart-bar__items {
+    translate: 0 0.15em;
+}
+
+.gift-card-cart-bar__items-placeholder {
+    font-size: 1.8rem;
+    color: config.$color-stone-500;
+    translate: 0 0.15em;
+}
+
+.gift-card-cart-bar__items-amount {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.gift-card-cart-bar__items-description {
+    font-size: 1.8rem;
+    color: config.$color-stone-500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gift-card-cart-bar__total {
+    padding-right: 0.6rem;
+    flex-shrink: 1;
+}
+
+.gift-card-cart-bar__button-placeholder {
+    border-radius: 50%;
+    height: 8.2rem;
+    width: 8.2rem;
+    display: grid;
+    place-items: center;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+}
+
+.gift-card-cart-bar__button-placeholder svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}
+
+.gift-card-cart-bar__button {
+    cursor: pointer;
+    height: 8.2rem;
+    min-width: 23rem;
+    box-sizing: border-box;
+    padding-left: 4rem;
+    padding-right: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    gap: 6rem;
+    color: config.$color-white;
+    background-color: config.$color-emerald-700;
+}
+
+.gift-card-cart-bar__button-label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    translate: 0 0.15em;
+}
+
+.gift-card-cart-bar__button-price {
+    font-size: 1.8rem;
+}
+
+.gift-card-cart-bar__button-icon svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}
+
+.gift-card-cart-bar__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.gift-card-cart-bar__selection {
+    position: fixed;
+    z-index: 1;
+    bottom: 16.6rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 82rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5rem;
+    border: 0.1rem solid config.$color-gray-300;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: config.$color-white;
+}
+
+.gift-card-cart-bar__selection-item {
+    padding: 4.4rem 5rem;
+    width: 26rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-card-cart-bar__selection-item:not(:last-child) {
+    border-right: 0.1rem solid config.$color-gray-300;
+}
+
+.gift-card-cart-bar__selection-item-description {
+    flex: 1;
+    margin-bottom: 2.2rem;
+}
+
+.gift-card-cart-bar__selection-item-trash {
+    color: config.$color-emerald-700;
+}

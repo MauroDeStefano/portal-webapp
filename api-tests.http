@@ -1,0 +1,98 @@
+POST https://app.friland.it/v1/gift_card/ws/new
+Content-Type: application/json
+
+{
+  "lang": "it",
+  "mail": "marco.ro@fintamail.it",
+  "name": "Name",
+  "surname": "Surname",
+  "phone": "000000",
+  "newsletter_subscription": "false",
+  "giftCards": [
+    {
+      "quantity": 2,
+      "gift_card_template_id": "7",
+      "date_gift": "",
+      "message": "",
+      "mail": "ionutzb@gmail.com",
+      "name": "Name",
+      "surname": "Surname"
+    }
+  ]
+}
+
+###
+
+
+
+### Auth & Get JWT Token
+POST https://app.friland.it/v1/user/ws/login
+Content-Type: application/x-www-form-urlencoded
+
+mail = marco.rossi@fintamail.it &
+password = password
+
+> {%
+    client.global.set("jwt_accessToken", response.body.accessToken);
+    client.global.set("jwt_refreshToken", response.body.refreshToken);
+%}
+
+### Refresh JWT Token
+POST https://app.friland.it/v1/user/ws/useRefreshToken
+Content-Type: application/x-www-form-urlencoded
+
+token = {{jwt_refreshToken}}
+
+> {%
+    client.global.set("jwt_accessToken", response.body);
+    // client.global.set("jwt_refreshToken", response.body.refreshToken);
+%}
+
+### User profile
+GET https://app.friland.it/v1/user/ws/profile
+Authorization: Bearer {{jwt_accessToken}}
+
+### User newsletter
+GET https://app.friland.it//v1/user/ws/newsletter-status
+Authorization: Bearer {{jwt_accessToken}}
+
+### User email
+GET https://app.friland.it//v1/user/mail/marco.rossi@fintamail.it
+
+### date range availability for all houses
+GET https://app.friland.it/v1/vacancy/allHousesSimple
+
+> {%
+    client.global.set("vacancy_dates_open", response.body.open);
+    client.global.set("vacancy_dates_close", response.body.close);
+    // client.global.set("jwt_refreshToken", response.body.refreshToken);
+%}
+
+### date availability for all houses
+GET https://app.friland.it/v1/vacancy/ws/allHouses/{{vacancy_dates_open}}/{{vacancy_dates_close}}
+
+### date availability for a region
+GET https://app.friland.it/v1/vacancy/ws/allHousesRegion/{{vacancy_dates_open}}/{{vacancy_dates_close}}/6
+
+###
+GET https://app.friland.it/v1/content/it/allHouses/6
+
+
+
+#### Regions
+GET https://app.friland.it/v1/houses/ws/region_list
+
+
+### Get all houses in a region
+https://app.friland.it/v1/days/vacancyAll/ws/2024-01-01/2024-12-12/9
+
+#### Houses in a region
+#GET https://app.friland.it/v1/content/en/allHouses/{{region}}
+
+### House details
+https://app.friland.it/v1/houses/id/16
+
+###House availability
+#GET https://app.friland.it/v1/vacancy/ws/oneHouse/2024-05-05/2025-05-10/16
+GET https://app.friland.it/v1/vacancy/ws/oneHouse/2024-05-05/2024-08-10/6
+

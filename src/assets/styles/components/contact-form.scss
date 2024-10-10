@@ -1,0 +1,110 @@
+@use "../config";
+
+.contact-form__response {
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 10rem;
+        padding-bottom: 16rem;
+    }
+}
+
+.contact-form__form {
+    padding-top: 3.6rem;
+    padding-bottom: 4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }
+}
+
+.contact-from__form-intro {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 3rem;
+    }
+}
+
+.contact-form__fields-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 1.6rem;
+    }
+}
+
+.contact-form__form-field {
+    grid-column: span 2;
+
+    @media (min-width: config.$breakpoint-md) {
+        &.half-width {
+            grid-column: span 1;
+        }
+    }
+}
+
+.contact-form__form-textarea textarea {
+    height: 17rem;
+}
+
+.contact-form__form-upload {
+    margin-top: 3rem;
+}
+
+.contact-form__form-upload {
+    margin: 3rem 0;
+}
+
+.contact-form__form-checkbox {
+    margin-top: 2.5rem;
+    margin-bottom: 1.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.contact-form__form-notes {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 3rem;
+    }
+}
+
+.contact-form__form-notes a {
+    font-weight: 700;
+}
+
+.contact-form__section-title {
+    text-align: center;
+    margin: 2.6rem 0;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin: 5rem 0;
+    }
+}
+
+.contact-form__tab-body {
+    margin: 1.2rem 0;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin: 1.6rem 0;
+    }
+}

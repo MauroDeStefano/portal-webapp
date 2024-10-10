@@ -1,0 +1,81 @@
+@use "../config";
+
+.gift-card-overview-2__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gift-card-overview-2__list-item {
+    padding: 2.6rem 0;
+    border-top: 0.1rem solid config.$color-gray-300;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+.gift-card-overview-2__list-item-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+        margin-bottom: 1em;
+    }
+}
+
+.gift-card-overview-2__list-item-num-nights {
+    font-size: 1.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.gift-card-overview-2__list-item-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.gift-card-overview-2__total {
+    border-top: 0.1rem solid config.$color-gray-300;
+    padding-top: 3.2rem;
+}
+
+.gift-card-overview-2__total-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.gift-card-overview-2__total {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+.gift-card-overview-2__total-price-wrapper {
+    text-align: right;
+}
+
+.gift-card-overview-2__total-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 2.4rem;
+    }
+}
+
+.gift-card-overview-2__total-price-description {
+    font-size: 1.4rem;
+    color: config.$color-stone-500;
+}

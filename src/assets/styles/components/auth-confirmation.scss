@@ -1,0 +1,36 @@
+@use "../config";
+
+.auth-confirmation__header {
+    @media (min-width: config.$breakpoint-sm) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.auth-confirmation__close-mobile {
+    @media (min-width: config.$breakpoint-sm) {
+        display: none;
+    }
+}
+
+.auth-confirmation__close-desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-sm) {
+        display: block;
+    }
+}
+
+.auth-confirmation__icon {
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-bottom: 2.5rem;
+    color: config.$color-emerald-700;
+}
+
+.auth-confirmation__message {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}

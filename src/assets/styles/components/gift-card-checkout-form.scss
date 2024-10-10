@@ -1,0 +1,15 @@
+@use "../config";
+
+.gift-card-checkout-form__mobile {
+    @media (min-width: config.$breakpoint-lg) {
+        display: none;
+    }
+}
+
+.gift-card-checkout-form__desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+    }
+}

@@ -1,0 +1,99 @@
+@use "../config";
+
+.stay-overview-3__num-nights {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        font-size: 1.8rem;
+    }
+}
+
+.stay-overview-3__details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.stay-overview-3__options {
+    margin-top: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.stay-overview-3__option {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.stay-overview-3__price {
+    text-align: right;
+    max-width: 10rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        max-width: initial;
+    }
+}
+
+.stay-overview-3__price-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (min-width: config.$breakpoint-lg) {
+        font-size: 2.4rem;
+    }
+}
+
+.stay-overview-3__price-description {
+    font-size: 1.4rem;
+    color: config.$color-stone-500;
+}
+
+.stay-overview-3__actions {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        margin-top: 2.7rem;
+        grid-template-columns: auto auto;
+        border-top: 0.1rem solid config.$color-gray-300;
+        gap: 2.7rem;
+    }
+}
+
+.stay-overview-3__action-item {
+    padding-top: 2.4rem;
+    border-top: 0.1rem solid config.$color-gray-300;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 2.7rem;
+        border-top: none;
+    }
+}
+
+.stay-overview-3__cancel--disabled {
+    opacity: 0.5;
+}
+
+.stay-overview-3__cancel-text {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.stay-overview-3__invoice {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3.8rem;
+    }
+}

@@ -1,0 +1,167 @@
+@use "../config";
+
+.location-carousel {
+    position: relative;
+    background-color: config.$color-amber-200;
+}
+
+.location-carousel__background-image {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        display: block;
+    }
+}
+
+.location-carousel__copy-unit {
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-top: 15rem;
+    }
+}
+
+.location-carousel__copy-wrapper {
+    text-align: center;
+}
+
+.location-carousel__copy-subtitle {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.location-carousel__copy-title {
+    margin-bottom: 0;
+}
+
+.location-carousel__carousel-unit {
+    position: relative;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 10rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 16rem;
+    }
+}
+
+.location-carousel__carousel-unit-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+    }
+}
+
+.location-carousel__carousel {
+    position: relative;
+}
+
+.location-carousel__carousel-slide {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    isolation: isolate;
+}
+
+.location-carousel__carousel-slide-link {
+    position: absolute;
+    inset: 0;
+}
+
+.location-carousel__carousel-image {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-carousel__carousel-copy {
+    padding-bottom: 8rem;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    box-sizing: border-box;
+    grid-row: 2;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: config.$color-white;
+    background: linear-gradient(transparent, hsla(0, 0%, 0%, 0.35));
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-bottom: 10rem;
+    }
+}
+
+.location-carousel__carousel-location-name {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.location-carousel__carousel-title {
+    margin-bottom: 0;
+}
+
+.location-carousel__carousel-dots-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-lg) {
+        bottom: 6rem;
+    }
+}
+
+.location-carousel__carousel-button {
+    display: none;
+}
+
+@media (hover: hover) and (min-width: config.$breakpoint-2xl) {
+    .location-carousel__carousel-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+        opacity: 0;
+        transition: opacity 300ms;
+        color: config.$color-emerald-700;
+
+        &--prev {
+            left: -8.6rem;
+        }
+
+        &--next {
+            right: -8.6rem;
+        }
+    }
+
+    .location-carousel__carousel-unit:hover .location-carousel__carousel-button {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,64 @@
+@use "../config";
+
+.gallery-1 {
+    position: relative;
+}
+
+.gallery-1__carousel-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 17;
+    object-fit: cover;
+
+    @media (min-width: config.$breakpoint-xs) {
+        aspect-ratio: 3 / 3;
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        aspect-ratio: 29 / 15;
+    }
+}
+
+.gallery-1__carousel-dots-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3.3rem;
+    display: flex;
+    justify-content: center;
+    color: config.$color-white;
+
+    @media (min-width: config.$breakpoint-lg) {
+        bottom: 5.3rem;
+    }
+}
+
+.gallery-1__carousel-button {
+    display: none;
+}
+
+@media (hover: hover) and (min-width: config.$breakpoint-md) {
+    .gallery-1__carousel-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+        opacity: 0;
+        transition: opacity 300ms;
+        color: config.$color-white;
+
+        &--prev {
+            left: 7.4rem;
+        }
+
+        &--next {
+            right: 7.4rem;
+        }
+    }
+
+    .gallery-1:hover .gallery-1__carousel-button {
+        opacity: 1;
+    }
+}

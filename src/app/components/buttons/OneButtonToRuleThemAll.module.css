@@ -1,0 +1,101 @@
+.button {
+    --border-color: tranparent;
+    --bg-color: transparent;
+    --text-color: #38695b;
+    --button-icon-size: 4.8rem;
+
+    position: relative;
+    border: 0.1rem solid var(--border-color);
+    border-radius: 5.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.has-icon-align-left .icon {
+    order: -1
+}
+
+.button,
+.icon {
+    transition: transform 0.3s ease-in-out, background-color 0.3s linear;
+}
+
+.noBackground {
+    color: currentColor;
+}
+
+.backgroundOnIcon .icon,
+.backgroundOnEl {
+    --text-color: #fff;
+    --bg-color: #38695b;
+}
+
+.iconOutline.hover-scale:not(:disabled):hover .icon,
+.backgroundOnIcon.hover-scale:not(:disabled):hover .icon,
+.backgroundOnEl.hover-scale:not(:disabled):hover {
+    transform: scale(1.0834);
+}
+
+.backgroundOnEl.hover-background:not(:disabled):hover {
+    --bg-color: hsl(163, 30%, 25%);
+}
+
+.has-border {
+    --border-color: #c6c6c6;
+}
+
+.has-shadow {
+    box-shadow: 0 0.3rem 0.6rem hsla(0, 0%, 0%, 0.38);
+}
+
+.label {
+    flex: 1;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    font-weight: 600;
+}
+
+.no-padding .label {
+    padding: 0;
+}
+
+
+.icon {
+    position: relative;
+    width: var(--button-icon-size);
+    height: var(--button-icon-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    isolation: isolate;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.backgroundOnIcon .icon {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.iconOutline .icon {
+    border: 0.3rem solid currentColor;
+}
+
+.icon-button--outline {}
+
+.icon svg {
+    display: block;
+    width: auto;
+    height: 1.4rem;
+}
+
+
+.noIcon {
+
+}
+

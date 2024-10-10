@@ -1,0 +1,26 @@
+@use "../config";
+
+.form-response-1 {
+    text-align: center;
+}
+
+.form-response-1__icon {
+    display: block;
+    width: 5.2rem;
+    height: 5.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: config.$color-emerald-700;
+}
+
+.form-response-1__title {
+    color: config.$color-emerald-700;
+    margin-bottom: 1.4rem;
+}
+
+.form-response-1__text {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}

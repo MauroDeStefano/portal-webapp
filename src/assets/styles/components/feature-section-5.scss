@@ -1,0 +1,121 @@
+@use "../config";
+
+.feature-section-5__mobile {
+    border-width: 0.1rem 0;
+    border-bottom-style: solid;
+    border-color: config.$color-gray-300;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: none;
+    }
+}
+
+.feature-section-5__desktop {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        padding-top: 14rem;
+        padding-bottom: 13rem;
+    }
+}
+
+.feature-section-5__title {
+    display: none;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 4.4rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 8rem;
+    }
+}
+
+.feature-section-5__wrapper {
+    display: grid;
+    gap: 3.6rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: config.$breakpoint-xl) {
+        grid-template-columns: 5fr 4fr;
+        column-gap: 14rem;
+        row-gap: 12rem;
+    }
+}
+
+.feature-section-5__features-unit {
+    @media (min-width: config.$breakpoint-xl) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
+.feature-section-5__features-wrapper {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+    border-width: 0.1rem 0;
+    border-style: solid;
+    border-color: config.$color-gray-300;
+    display: grid;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        column-gap: 4rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        grid-template-columns: 1fr;
+        row-gap: 1.7rem;
+    }
+}
+
+.feature-section-5__feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.3rem;
+
+    @media (min-width: config.$breakpoint-lg) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        text-align: left;
+        gap: 2.7rem;
+    }
+}
+
+.feature-section-5__feature-icon-wrapper {
+    border-radius: 50%;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: config.$color-amber-200;
+}
+
+.feature-section-5__feature-icon {
+    display: block;
+    width: auto;
+    height: 4rem;
+}
+
+.feature-section-5__feature-title {
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.feature-section-5__gallery-unit {
+    @media (min-width: config.$breakpoint-xl) {
+        grid-column: span 2;
+    }
+}

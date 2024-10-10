@@ -1,0 +1,76 @@
+@use "../config";
+
+.feature-section-6 {
+    padding-top: 6.8rem;
+    padding-bottom: 6.8rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 14rem;
+        padding-bottom: 16rem;
+    }
+}
+
+.feature-section-6__title {
+    margin-bottom: 5.8rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 12.6rem;
+    }
+}
+
+.feature-section-6__features-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem;
+    }
+}
+
+.feature-section-6__feature-item {
+    padding: 5rem 3rem;
+    text-align: center;
+    color: config.$color-white;
+    background-color: config.$color-emerald-500;
+}
+
+.feature-section-6__feature-icon-wrapper {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.feature-section-6__feature-icon {
+    width: auto;
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.7rem;
+}
+
+.feature-section-6__feature-icon_circle {
+    display: flex;
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    line-height: 0;
+}
+
+.feature-section-6__feature-title {
+    margin-bottom: 2.7rem;
+}
+
+.feature-section-6__feature-text {
+    max-width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+}

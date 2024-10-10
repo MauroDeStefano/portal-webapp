@@ -1,0 +1,94 @@
+@use "../config";
+
+.company-services-form-1 {
+    padding-top: 5.4rem;
+    padding-bottom: 5.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    @media (min-width: config.$breakpoint-lg) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    @media (min-width: config.$breakpoint-xl) {
+        padding-bottom: 17rem;
+        padding-bottom: 17rem;
+    }
+}
+
+.company-services-form-1__header-container {
+    --container-width: 80rem;
+}
+
+.company-services-form-1__title {
+    text-align: center;
+    margin-bottom: 4.2rem;
+
+    @media (min-width: config.$breakpoint-xl) {
+        margin-bottom: 13rem;
+    }
+}
+
+.company-services-form-1__form-notes {
+    font-size: 1.3rem;
+    color: config.$color-gray-400;
+    margin-bottom: 2.5rem;
+
+    &--mobile-center {
+        text-align: center;
+    }
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-bottom: 3rem;
+
+        &--mobile-center {
+            text-align: left;
+        }
+    }
+}
+
+.company-services-form-1__form-notes a {
+    font-weight: 700;
+}
+
+.company-services-form-1__fields-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        gap: 1.6rem;
+    }
+}
+
+.company-services-form-1__form-field {
+    grid-column: span 2;
+
+    @media (min-width: config.$breakpoint-md) {
+        &.half-width {
+            grid-column: span 1;
+        }
+    }
+}
+
+.company-services-form-1__form-checkbox {
+    margin-top: 2.5rem;
+    margin-bottom: 1.4rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.company-services-form-1 .form__textarea-input {
+    height: 12.5rem;
+
+    @media (min-width: config.$breakpoint-md) {
+        height: 17rem;
+    }
+}
